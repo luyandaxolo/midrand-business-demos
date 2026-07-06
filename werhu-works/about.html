@@ -1,194 +1,430 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Werhu Works Mobile Mechanic Midrand</title>
-    <meta name="description" content="Meet Grant Ngobeni, founder of Werhu Works. Mobile mechanic services in Midrand with over 10 years experience. We come to you.">
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | Werhu Works Mobile Mechanic Midrand</title>
+<meta name="description" content="Meet Grant Ngobeni, founder of Werhu Works. Mobile mechanic services in Midrand with over 10 years experience at Bidvest McCarthy VW & Toyota. We come to you.">
+<meta property="og:title" content="About Us | Werhu Works Mobile Mechanic Midrand">
+<meta property="og:description" content="Meet Grant Ngobeni, founder of Werhu Works. Over 10 years of certified experience in Midrand.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=1200&q=80">
+<meta property="og:type" content="website">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+<style>
+
+:root{--primary:#E8A838;--primary-dark:#C48A2A;--black:#111111;--dark:#1C1C1C;--gray:#666666;--light-gray:#F8F8F8;--white:#FFFFFF;--border:#E5E5E5;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:#1a1a1a;line-height:1.6;background:#fff}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+.header{position:sticky;top:0;z-index:1000;background:var(--black);border-bottom:1px solid rgba(255,255,255,0.06)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{font-family:'Bebas Neue',sans-serif;font-size:32px;color:var(--white);letter-spacing:1px}
+.logo span{color:var(--primary)}
+.nav{display:flex;gap:32px;align-items:center}
+.nav a{color:rgba(255,255,255,0.75);font-size:14px;font-weight:600;transition:color 0.2s;text-transform:uppercase;letter-spacing:0.5px}
+.nav a:hover{color:var(--primary)}
+.nav a.active{color:var(--primary)}
+.mobile-phone{display:none;color:var(--primary);font-weight:800;font-size:14px}
+.cta-btn{background:var(--primary);color:var(--black);padding:10px 22px;border-radius:6px;font-weight:700;font-size:13px;transition:all 0.2s;border:none;cursor:pointer;text-transform:uppercase;letter-spacing:0.5px}
+.cta-btn:hover{background:var(--primary-dark);transform:translateY(-1px)}
+.menu-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px}
+.menu-toggle span{display:block;width:24px;height:2px;background:var(--white);border-radius:1px}
+.hero{position:relative;min-height:92vh;display:flex;align-items:center;background:var(--black);overflow:hidden}
+.hero-bg{position:absolute;inset:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;opacity:0.35}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(17,17,17,0.97) 0%,rgba(17,17,17,0.7) 55%,rgba(17,17,17,0.3) 100%)}
+.hero-content{position:relative;z-index:2;max-width:660px;padding:100px 0}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(232,168,56,0.12);color:var(--primary);padding:8px 16px;border-radius:100px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:24px;border:1px solid rgba(232,168,56,0.25)}
+.hero-tag .pulse{width:8px;height:8px;background:var(--primary);border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
+.hero h1{font-family:'Bebas Neue',sans-serif;font-size:80px;line-height:0.95;color:var(--white);margin-bottom:20px;letter-spacing:1px}
+.hero h1 span{color:var(--primary)}
+.hero-subtitle{font-size:18px;color:rgba(255,255,255,0.72);margin-bottom:36px;line-height:1.65;max-width:520px}
+.hero-ctas{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:56px}
+.btn-primary{display:inline-flex;align-items:center;gap:10px;background:var(--primary);color:var(--black);padding:16px 32px;border-radius:8px;font-weight:800;font-size:15px;transition:all 0.2s;border:none;cursor:pointer}
+.btn-primary:hover{background:var(--primary-dark);transform:translateY(-2px);box-shadow:0 8px 24px rgba(232,168,56,0.3)}
+.btn-secondary{display:inline-flex;align-items:center;gap:10px;background:transparent;color:var(--white);padding:16px 32px;border-radius:8px;font-weight:700;font-size:15px;border:1px solid rgba(255,255,255,0.25);transition:all 0.2s}
+.btn-secondary:hover{background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.5)}
+.trust-bar{background:var(--dark);border-top:1px solid rgba(255,255,255,0.05);padding:48px 0}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
+.trust-item{border-right:1px solid rgba(255,255,255,0.06);padding:0 16px}
+.trust-item:last-child{border-right:none}
+.trust-number{font-family:'Bebas Neue',sans-serif;font-size:44px;color:var(--primary);line-height:1;display:block}
+.trust-label{font-size:13px;color:rgba(255,255,255,0.55);margin-top:6px;display:block;font-weight:500}
+.section{padding:100px 0}
+.section-light{background:var(--light-gray)}
+.section-header{text-align:center;max-width:640px;margin:0 auto 64px}
+.section-tag{display:inline-block;color:var(--primary);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:2px;margin-bottom:12px}
+.section-header h2{font-family:'Bebas Neue',sans-serif;font-size:52px;line-height:1.05;margin-bottom:16px;color:var(--black)}
+.section-header p{color:var(--gray);font-size:17px;line-height:1.6}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.service-card{background:var(--white);border-radius:14px;overflow:hidden;border:1px solid var(--border);transition:all 0.35s}
+.service-card:hover{transform:translateY(-6px);box-shadow:0 24px 48px rgba(0,0,0,0.08)}
+.service-card img{width:100%;height:240px;object-fit:cover}
+.service-card-content{padding:28px}
+.service-card h3{font-size:18px;font-weight:800;margin-bottom:10px;color:var(--black)}
+.service-card p{font-size:14px;color:var(--gray);margin-bottom:18px;line-height:1.6}
+.service-card a{color:var(--primary);font-weight:700;font-size:14px;display:inline-flex;align-items:center;gap:6px;transition:gap 0.2s}
+.service-card a:hover{gap:10px}
+.features-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:40px}
+.feature-item{text-align:center}
+.feature-icon{width:72px;height:72px;background:rgba(232,168,56,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 24px;color:var(--primary);font-size:26px}
+.feature-item h3{font-size:17px;font-weight:800;margin-bottom:10px;color:var(--black)}
+.feature-item p{font-size:14px;color:var(--gray);line-height:1.6}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.gallery-item{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:4/3}
+.gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform 0.6s}
+.gallery-item:hover img{transform:scale(1.08)}
+.gallery-overlay{position:absolute;inset:0;background:linear-gradient(transparent 35%,rgba(0,0,0,0.85));display:flex;align-items:flex-end;padding:28px}
+.gallery-overlay h4{color:var(--white);font-size:16px;font-weight:700}
+.gallery-overlay span{color:var(--primary);font-size:13px;font-weight:600}
+.testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.testimonial-card{background:var(--white);padding:36px;border-radius:14px;border:1px solid var(--border);position:relative}
+.testimonial-card::before{content:'"';font-family:Georgia,serif;font-size:64px;color:var(--primary);opacity:0.2;line-height:1;position:absolute;top:16px;left:24px}
+.testimonial-stars{color:var(--primary);font-size:14px;margin-bottom:20px;letter-spacing:2px;position:relative}
+.testimonial-card p{font-size:15px;color:var(--gray);margin-bottom:24px;line-height:1.65;position:relative;font-style:italic}
+.testimonial-author{font-weight:800;font-size:14px;color:var(--black);position:relative}
+.testimonial-author span{display:block;font-weight:500;color:var(--gray);font-size:13px;margin-top:2px}
+.cta-section{padding:80px 0}
+.cta-box{background:var(--black);border-radius:20px;padding:80px 48px;text-align:center;position:relative;overflow:hidden}
+.cta-box::before{content:'';position:absolute;top:-40%;left:-20%;width:140%;height:140%;background:radial-gradient(circle,rgba(232,168,56,0.12) 0%,transparent 65%)}
+.cta-box h2{font-family:'Bebas Neue',sans-serif;font-size:56px;color:var(--white);position:relative;margin-bottom:16px;line-height:1}
+.cta-box p{color:rgba(255,255,255,0.65);font-size:18px;position:relative;max-width:520px;margin:0 auto 32px;line-height:1.6}
+.cta-buttons{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;position:relative}
+.footer{background:var(--black);color:rgba(255,255,255,0.55);padding:80px 0 32px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:48px;margin-bottom:64px}
+.footer-brand h3{font-family:'Bebas Neue',sans-serif;font-size:32px;color:var(--white);margin-bottom:16px;letter-spacing:1px}
+.footer-brand h3 span{color:var(--primary)}
+.footer-brand p{font-size:14px;line-height:1.7;margin-bottom:24px;color:rgba(255,255,255,0.55)}
+.footer-social{display:flex;gap:14px}
+.footer-social a{width:44px;height:44px;background:rgba(255,255,255,0.07);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--white);transition:all 0.25s;font-size:16px}
+.footer-social a:hover{background:var(--primary);color:var(--black);transform:translateY(-2px)}
+.footer-links h4{color:var(--white);font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:20px}
+.footer-links ul{list-style:none}
+.footer-links li{margin-bottom:12px}
+.footer-links a{font-size:14px;color:rgba(255,255,255,0.55);transition:color 0.2s}
+.footer-links a:hover{color:var(--primary)}
+.footer-contact h4{color:var(--white);font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:20px}
+.footer-contact ul{list-style:none}
+.footer-contact li{display:flex;align-items:flex-start;gap:12px;margin-bottom:16px;font-size:14px;color:rgba(255,255,255,0.55)}
+.footer-contact a{color:rgba(255,255,255,0.55);transition:color 0.2s}
+.footer-contact a:hover{color:var(--primary)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.06);padding-top:32px;text-align:center;font-size:13px;color:rgba(255,255,255,0.35)}
+.whatsapp-float{position:fixed;bottom:24px;right:24px;width:60px;height:60px;background:#25D366;color:var(--white);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 24px rgba(37,211,102,0.4);z-index:999;transition:all 0.25s;font-size:28px}
+.whatsapp-float:hover{transform:scale(1.1) rotate(-5deg);box-shadow:0 6px 32px rgba(37,211,102,0.5)}
+@media(max-width:768px){
+.menu-toggle{display:flex}
+.nav{display:none;position:absolute;top:72px;left:0;right:0;background:var(--black);flex-direction:column;padding:28px 24px;gap:18px;border-top:1px solid rgba(255,255,255,0.08);align-items:flex-start}
+.nav.active{display:flex}
+.nav a{font-size:15px}
+.mobile-phone{display:block;margin-right:auto;padding-left:16px}
+.hero h1{font-size:52px}
+.hero{min-height:85vh}
+.hero-content{padding:60px 0 80px}
+.trust-grid{grid-template-columns:repeat(2,1fr);gap:28px}
+.trust-item{border-right:none;border-bottom:1px solid rgba(255,255,255,0.06);padding-bottom:20px}
+.trust-item:nth-child(3),.trust-item:nth-child(4){border-bottom:none;padding-bottom:0}
+.services-grid,.features-grid,.gallery-grid,.testimonials-grid{grid-template-columns:1fr}
+.footer-grid{grid-template-columns:1fr;gap:40px}
+.cta-box{padding:48px 28px}
+.cta-box h2{font-size:40px}
+.section-header h2{font-size:40px}
+.section{padding:64px 0}
+.features-grid{gap:32px}
+.gallery-grid{gap:14px}
+}
+@media(max-width:480px){
+.hero h1{font-size:44px}
+.trust-grid{grid-template-columns:1fr}
+.trust-item{border-bottom:1px solid rgba(255,255,255,0.06);padding-bottom:20px}
+.trust-item:last-child{border-bottom:none;padding-bottom:0}
+.hero-ctas{flex-direction:column}
+.btn-primary,.btn-secondary{width:100%;justify-content:center}
+.cta-buttons{flex-direction:column}
+.cta-buttons .btn-primary,.cta-buttons .btn-secondary{width:100%;justify-content:center}
+}
+.page-header{background:var(--black);padding:140px 0 80px;text-align:center}
+.page-header h1{font-family:'Bebas Neue',sans-serif;font-size:64px;color:var(--white);line-height:1;margin-bottom:16px}
+.page-header p{color:rgba(255,255,255,0.65);font-size:18px;max-width:600px;margin:0 auto;line-height:1.6}
+.page-header .section-tag{color:var(--primary)}
+.service-detail{padding:80px 0}
+.service-detail.alt{background:var(--light-gray)}
+.service-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.service-detail-grid.reverse{direction:rtl}
+.service-detail-grid.reverse > *{direction:ltr}
+.service-detail-image{border-radius:16px;overflow:hidden}
+.service-detail-image img{width:100%;height:400px;object-fit:cover}
+.service-detail-tag{display:inline-block;background:var(--primary);color:var(--black);padding:6px 14px;border-radius:6px;font-size:12px;font-weight:800;text-transform:uppercase;margin-bottom:16px}
+.service-detail-content h2{font-family:'Bebas Neue',sans-serif;font-size:44px;color:var(--black);margin-bottom:20px;line-height:1.1}
+.service-detail-content p{font-size:15px;color:var(--gray);line-height:1.7;margin-bottom:24px}
+.service-detail-content h4{font-size:14px;font-weight:800;text-transform:uppercase;letter-spacing:1px;margin-bottom:14px;color:var(--black)}
+.service-detail-list{list-style:none;margin-bottom:24px}
+.service-detail-list li{position:relative;padding-left:28px;margin-bottom:10px;font-size:14px;color:var(--gray)}
+.service-detail-list li::before{content:'\2713';position:absolute;left:0;color:var(--primary);font-weight:700}
+.service-detail-meta{display:flex;gap:32px;margin-bottom:28px}
+.meta-item{display:flex;flex-direction:column}
+.meta-label{font-size:12px;color:var(--gray);text-transform:uppercase;letter-spacing:1px;font-weight:600}
+.meta-value{font-size:18px;font-weight:800;color:var(--black)}
+.notice-box{display:flex;gap:12px;background:rgba(232,168,56,0.08);border:1px solid rgba(232,168,56,0.2);padding:16px;border-radius:10px;margin-bottom:24px;font-size:14px;color:var(--gray)}
+.notice-box i{color:var(--primary);font-size:18px;flex-shrink:0}
+.process-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;counter-reset:step}
+.process-step{text-align:center;position:relative}
+.process-step::before{counter-increment:step;content:counter(step);display:flex;align-items:center;justify-content:center;width:56px;height:56px;background:var(--primary);color:var(--black);font-family:'Bebas Neue',sans-serif;font-size:28px;border-radius:50%;margin:0 auto 20px}
+.process-step h3{font-size:17px;font-weight:800;margin-bottom:10px}
+.process-step p{font-size:14px;color:var(--gray);line-height:1.6}
+.faq-item{border-bottom:1px solid var(--border);padding:24px 0}
+.faq-question{display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-size:17px;font-weight:700;color:var(--black);gap:16px}
+.faq-question i{color:var(--primary);font-size:14px;transition:transform 0.3s}
+.faq-answer{max-height:0;overflow:hidden;transition:max-height 0.3s ease}
+.faq-answer-inner{padding-top:14px;font-size:15px;color:var(--gray);line-height:1.7}
+.faq-item.active .faq-answer{max-height:300px}
+.faq-item.active .faq-question i{transform:rotate(180deg)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.about-image{position:relative;border-radius:16px;overflow:hidden}
+.about-image img{width:100%;height:480px;object-fit:cover}
+.about-badge{position:absolute;bottom:24px;left:24px;background:var(--primary);color:var(--black);padding:16px 24px;border-radius:12px;text-align:center}
+.about-badge-number{font-family:'Bebas Neue',sans-serif;font-size:36px;line-height:1;display:block}
+.about-badge-text{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;display:block}
+.about-content h2{font-family:'Bebas Neue',sans-serif;font-size:44px;color:var(--black);margin-bottom:20px;line-height:1.1}
+.about-content p{font-size:15px;color:var(--gray);line-height:1.7;margin-bottom:20px}
+.about-mission{margin:32px 0;padding:24px;border-left:4px solid var(--primary);background:var(--light-gray);border-radius:0 12px 12px 0}
+.about-mission h3{color:var(--primary);font-size:14px;font-weight:800;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
+.about-mission p{font-size:14px;color:var(--gray);margin:0}
+.about-list{list-style:none}
+.about-list li{display:flex;align-items:center;gap:12px;margin-bottom:14px;font-size:15px;font-weight:600;color:var(--black)}
+.about-list li i{color:var(--primary);font-size:18px}
+.team-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px}
+.team-card{background:var(--white);border-radius:14px;overflow:hidden;border:1px solid var(--border)}
+.team-card img{width:100%;height:280px;object-fit:cover}
+.team-card-body{padding:28px}
+.team-card h3{font-size:18px;font-weight:800;margin-bottom:4px}
+.team-card span{color:var(--primary);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1px}
+.team-card p{font-size:14px;color:var(--gray);margin-top:12px;line-height:1.6}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.contact-info h2{font-family:'Bebas Neue',sans-serif;font-size:44px;color:var(--black);margin-bottom:16px;line-height:1.1}
+.contact-info > p{font-size:15px;color:var(--gray);line-height:1.7;margin-bottom:32px}
+.contact-card{display:flex;gap:20px;align-items:flex-start;padding:24px;background:var(--white);border-radius:12px;border:1px solid var(--border);margin-bottom:16px;transition:all 0.2s}
+.contact-card:hover{border-color:var(--primary);transform:translateX(4px)}
+.contact-card i{color:var(--primary);font-size:22px;margin-top:2px}
+.contact-card h4{font-size:15px;font-weight:800;margin-bottom:4px;color:var(--black)}
+.contact-card p,.contact-card a{font-size:14px;color:var(--gray);line-height:1.5}
+.contact-card a:hover{color:var(--primary)}
+.contact-form-wrap{background:var(--white);padding:40px;border-radius:16px;border:1px solid var(--border)}
+.contact-form-wrap h3{font-family:'Bebas Neue',sans-serif;font-size:32px;color:var(--black);margin-bottom:24px}
+.form-row{margin-bottom:18px}
+.form-row input,.form-row select,.form-row textarea{width:100%;padding:14px 16px;border:1px solid var(--border);border-radius:8px;font-family:inherit;font-size:14px;transition:all 0.2s;background:#fff}
+.form-row input:focus,.form-row select:focus,.form-row textarea:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(232,168,56,0.1)}
+.form-row textarea{resize:vertical;min-height:120px}
+.form-checkbox{display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--gray)}
+.form-checkbox input{width:auto;margin-top:3px}
+.hours-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:16px;text-align:center}
+.hours-item{padding:20px;background:var(--white);border-radius:10px;border:1px solid var(--border)}
+.hours-day{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--primary);display:block;margin-bottom:6px}
+.hours-time{font-size:14px;color:var(--gray);font-weight:600}
+@media(max-width:768px){
+.service-detail-grid,.about-grid,.contact-grid{grid-template-columns:1fr;gap:40px}
+.service-detail-grid.reverse{direction:ltr}
+.process-steps{grid-template-columns:repeat(2,1fr);gap:28px}
+.team-grid{grid-template-columns:1fr}
+.hours-grid{grid-template-columns:repeat(3,1fr)}
+.page-header h1{font-size:48px}
+.page-header{padding:100px 0 60px}
+.contact-form-wrap{padding:28px}
+}
+@media(max-width:480px){
+.process-steps{grid-template-columns:1fr}
+.hours-grid{grid-template-columns:1fr}
+.service-detail-image img{height:260px}
+.about-image img{height:340px}
+}
+
+</style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <img src="images/logo.png" alt="Werhu Works">
-            </a>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="active">About Us</a></li>
-                <li><a href="services.html">Our Services</a></li>
-                <li><a href="work.html">Our Work</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="book.html" class="nav-cta">Book a Service</a></li>
-            </ul>
-        </div>
+
+<header class="header" id="header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">WERHU <span>WORKS</span></a>
+    <a href="tel:0789078438" class="mobile-phone"><i class="fas fa-phone" style="margin-right:6px"></i>078 907 8438</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <nav class="nav" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="tel:0789078438" class="cta-btn"><i class="fas fa-phone"></i> 078 907 8438</a>
     </nav>
+  </div>
+</header>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <span class="section-tag">About Werhu Works</span>
-            <h1>Who We Are</h1>
-            <p>Professional mobile car repair and servicing brought to your doorstep in Midrand and surrounding areas.</p>
+<section class="page-header">
+  <div class="container">
+    <span class="section-tag">About Werhu Works</span>
+    <h1>Who We Are</h1>
+    <p>Professional mobile car repair and servicing brought to your doorstep in Midrand and surrounding areas.</p>
+  </div>
+</section>
+
+<section class="section" id="history">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=800&q=80" alt="Werhu Works mobile mechanic van and workshop in Midrand">
+        <div class="about-badge">
+          <span class="about-badge-number">10+</span>
+          <span class="about-badge-text">Years<br>Experience</span>
         </div>
-    </section>
-
-    <!-- Our History -->
-    <section class="about" id="history">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-image">
-                    <img src="images/inhouse.jpg" alt="Werhu Works mobile mechanic van">
-                    <div class="about-badge">
-                        <span class="about-badge-number">10+</span>
-                        <span class="about-badge-text">Years<br>Experience</span>
-                    </div>
-                </div>
-                <div class="about-content">
-                    <span class="section-tag">Our History</span>
-                    <h2>Workshop & House Calls</h2>
-                    <p>At Werhu Works, we know that sometimes cars break down and it can be a big problem. That's why we give you two options: bring your car to our fully equipped workshop in Midrand, or we'll come to you. Our team of mechanics is really good at what they do, and we want to make fixing your car as easy as possible for you.</p>
-                    
-                    <h3 style="color: var(--brand-yellow); font-size: 16px; text-transform: uppercase; letter-spacing: 1px; margin: 28px 0 12px;">Our Mission</h3>
-                    <p>Our goal is to help you get your car fixed without any hassle. Whether you visit our workshop or request a house call, we want to save you time and money. We always try our best to do a great job and make sure you're happy with our service.</p>
-                    
-                    <ul class="about-list" style="margin-top: 24px;">
-                        <li>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                            <span>Expertise You Can Trust</span>
-                        </li>
-                        <li>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                            <span>Workshop & House Call Service</span>
-                        </li>
-                        <li>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                            <span>Customer Satisfaction Guaranteed</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      </div>
+      <div class="about-content">
+        <span class="section-tag">Our History</span>
+        <h2>Workshop & House Calls</h2>
+        <p>At Werhu Works, we understand that car trouble never happens at a convenient time. That is why we offer two flexible options: bring your car to our fully equipped workshop in Midrand, or let us come to you. Our team of experienced mechanics handles everything from routine oil changes to complex engine rebuilds.</p>
+        <p>We started with a simple mission: make car care honest, convenient, and affordable for Midrand residents. No more waiting rooms. No more surprise bills. Just quality workmanship done right the first time.</p>
+        <div class="about-mission">
+          <h3>Our Mission</h3>
+          <p>To deliver expert car repair and maintenance with transparency, convenience, and integrity. Every car. Every customer. Every time.</p>
         </div>
-    </section>
+        <ul class="about-list">
+          <li><i class="fas fa-check-circle"></i> Expertise You Can Trust</li>
+          <li><i class="fas fa-check-circle"></i> Workshop & House Call Service</li>
+          <li><i class="fas fa-check-circle"></i> Customer Satisfaction Guaranteed</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Founder Section -->
-    <section class="process" id="founder">
-        <div class="container">
-            <div class="section-header center">
-                <span class="section-tag">The Founder</span>
-                <h2>Meet Grant Ngobeni</h2>
-            </div>
-            <div class="founder-card">
-                <div class="founder-content">
-                    <p>Hi, I'm Grant Ngobeni, and I run Werhu Works. I've been working in different jobs for more than ten years, learning a lot along the way.</p>
-                    <p>First, I worked with cars at <strong>Bidvest McCarthy VW</strong>, where I learned all about how they work and how to give great service. Then, I moved to <strong>Bidvest McCarthy Toyota and Hino (Pty) Ltd</strong>, where I fixed diesel engines and forklifts, even in tough places like the Shoprite Distribution Centre.</p>
-                    <p>Before I got into cars, I worked with computers at <strong>Tarsus Technology Group</strong> and then helped people with online banking at <strong>ABSA Bank</strong>. I like solving problems and making customers happy.</p>
-                    <p>Now, at Werhu Works, I do all kinds of house calls car services, like changing oil, fixing brakes, and checking cooling systems. I really care about doing a great job for everyone who comes to me for help. You can trust Werhu Works to take care of your car needs because I'm dedicated to giving you the best service possible.</p>
-                    <a href="contact.html" class="btn btn-primary" style="margin-top: 20px;">Get in Touch</a>
-                </div>
-            </div>
+<section class="section section-light" id="founder">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">The Founder</span>
+      <h2>Meet Grant Ngobeni</h2>
+      <p>The hands and heart behind every repair at Werhu Works.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card">
+        <img src="https://images.unsplash.com/photo-1611825719244-9496f43f3b30?w=800&q=80" alt="Grant Ngobeni, founder and lead mechanic at Werhu Works">
+        <div class="team-card-body">
+          <h3>Grant Ngobeni</h3>
+          <span>Founder & Lead Mechanic</span>
+          <p>Grant has spent over a decade building his craft across some of South Africa's most respected automotive brands. Before founding Werhu Works, he trained and worked at <strong>Bidvest McCarthy VW</strong>, where he mastered the intricacies of Volkswagen engineering, and later at <strong>Bidvest McCarthy Toyota and Hino (Pty) Ltd</strong>, where he specialized in diesel engines and heavy-duty vehicle maintenance.</p>
         </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-box">
-                <h2>Ready To Get Your Car Fixed?</h2>
-                <p>We're here to help and make things easy for you. We look forward to helping you with your car troubles!</p>
-                <div class="cta-buttons">
-                    <a href="book.html" class="btn btn-primary">Book a Service</a>
-                    <a href="contact.html" class="btn btn-secondary">Contact Us</a>
-                </div>
-            </div>
+      </div>
+      <div class="team-card">
+        <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=800&q=80" alt="Werhu Works mechanic team working on a vehicle">
+        <div class="team-card-body">
+          <h3>Our Values</h3>
+          <span>What Drives Us</span>
+          <p><strong>Honesty first.</strong> We show you the old parts, explain the problem, and quote upfront. <strong>Quality always.</strong> OEM and certified aftermarket parts only. <strong>Convenience matters.</strong> We come to your home or office so you do not have to waste your day. <strong>Community focused.</strong> We are Midrand locals serving Midrand locals.</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="footer" id="contact">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <img src="images/logo.png" alt="Werhu Works" class="footer-logo">
-                    <p>Professional mobile mechanical and electrical engineering services in Midrand, Gauteng.</p>
-                    <div class="footer-social">
-                        <a href="https://www.facebook.com/WerhuWorksEngineeringServices" target="_blank" aria-label="Facebook">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-                        </a>
-                        <a href="https://www.instagram.com/werhuworksengineeringservices/" target="_blank" aria-label="Instagram">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="currentColor" stroke-width="2"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2"/></svg>
-                        </a>
-                        <a href="https://www.tiktok.com/@werhu_workx" target="_blank" aria-label="TikTok">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.88-2.89 2.89 2.89 0 0 1 2.88-2.89c.23 0 .45.03.66.08V9.4a6.37 6.37 0 0 0-.66-.04A6.34 6.34 0 0 0 3.25 15.7a6.34 6.34 0 0 0 6.33 6.34 6.34 6.34 0 0 0 6.33-6.34V8.83a8.23 8.23 0 0 0 4.8 1.54V6.89a4.85 4.85 0 0 1-1.12-.2z"/></svg>
-                        </a>
-                        <a href="https://wa.me/27789078438" target="_blank" aria-label="WhatsApp">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Our Services</a></li>
-                        <li><a href="work.html">Our Work</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="book.html">Book a Service</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="services.html#oil-change">Oil Change</a></li>
-                        <li><a href="services.html#servicing">Minor & Major Service</a></li>
-                        <li><a href="services.html#clutch">Clutch Replacement</a></li>
-                        <li><a href="services.html#brakes">Brake Replacement</a></li>
-                        <li><a href="services.html#diagnostics">Diagnostics</a></li>
-                        <li><a href="services.html#cooling">Cooling System</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                            La Maison Royale, 82 Tamboti Rd, Witpoort 406-Jr, Midrand, 1685
-                        </li>
-                        <li>
-                            <a href="tel:0789078438">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                                078 907 8438
-                            </a>
-                        </li>
-                        <li>
-                            <a href="mailto:info@werhuworks.co.za">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                                info@werhuworks.co.za
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; <span id="year"></span> Werhu Works. All rights reserved.</p>
-            </div>
+<section class="section" id="stats">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">By The Numbers</span>
+      <h2>Trusted by Midrand Drivers</h2>
+    </div>
+    <div class="trust-grid" style="background:var(--light-gray);border-radius:16px;padding:48px">
+      <div class="trust-item" style="border-right:1px solid var(--border)">
+        <span class="trust-number" style="color:var(--black)">2,500+</span>
+        <span class="trust-label" style="color:var(--gray)">Cars Serviced</span>
+      </div>
+      <div class="trust-item" style="border-right:1px solid var(--border)">
+        <span class="trust-number" style="color:var(--black)">10+</span>
+        <span class="trust-label" style="color:var(--gray)">Years Experience</span>
+      </div>
+      <div class="trust-item" style="border-right:1px solid var(--border)">
+        <span class="trust-number" style="color:var(--black)">98%</span>
+        <span class="trust-label" style="color:var(--gray)">Customer Satisfaction</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-number" style="color:var(--black)">12</span>
+        <span class="trust-label" style="color:var(--gray)">Month Warranty</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-box">
+      <h2>Ready To Get Your Car Fixed?</h2>
+      <p>We are here to help and make things easy for you. We look forward to helping you with your car troubles.</p>
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn-primary"><i class="fas fa-calendar-check"></i> Book a Service</a>
+        <a href="contact.html" class="btn-secondary">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>WERHU <span>WORKS</span></h3>
+        <p>Professional mobile mechanical and electrical engineering services in Midrand, Gauteng. We bring the workshop to your doorstep.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/WerhuWorksEngineeringServices" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/werhuworksengineeringservices/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@werhu_workx" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="https://wa.me/27789078438" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
         </div>
-    </footer>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#oil-change">Oil Change</a></li>
+          <li><a href="services.html#servicing">Minor & Major Service</a></li>
+          <li><a href="services.html#clutch">Clutch Replacement</a></li>
+          <li><a href="services.html#brakes">Brake Replacement</a></li>
+          <li><a href="services.html#diagnostics">Diagnostics</a></li>
+          <li><a href="services.html#cooling">Cooling & Aircon</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <ul>
+          <li><i class="fas fa-location-dot"></i> La Maison Royale, 82 Tamboti Rd, Witpoort 406-Jr, Midrand, 1685</li>
+          <li><a href="tel:0789078438"><i class="fas fa-phone"></i> 078 907 8438</a></li>
+          <li><a href="mailto:info@werhuworks.co.za"><i class="fas fa-envelope"></i> info@werhuworks.co.za</a></li>
+          <li><a href="https://wa.me/27789078438" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp Message</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Werhu Works. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
 
-    <!-- WhatsApp Float -->
-    <a href="https://wa.me/27789078438" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    </a>
+<a href="https://wa.me/27789078438" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
 
-    <script src="script.js"></script>
+<script>
+const menuToggle=document.getElementById('menuToggle');
+const navMenu=document.getElementById('navMenu');
+menuToggle.addEventListener('click',function(){navMenu.classList.toggle('active');});
+</script>
 </body>
 </html>

@@ -1,436 +1,510 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Werhu Works | Car Service & Repairs Midrand</title>
-    <meta name="description" content="Expert car servicing, repairs and diagnostics in Midrand, Gauteng. Quality mechanical & electrical work you can trust. Book your service today.">
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Werhu Works | Mobile Car Service & Repairs Midrand</title>
+<meta name="description" content="Expert mobile mechanic services in Midrand, Gauteng. Oil changes, servicing, brakes, clutch, diagnostics and more. We come to you. Call 078 907 8438.">
+<meta property="og:title" content="Werhu Works | Mobile Car Service & Repairs Midrand">
+<meta property="og:description" content="Expert mobile mechanic services in Midrand. We come to you. Book today.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=1200&q=80">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://werhuworks.co.za">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Werhu Works",
+  "description": "Mobile car service and repairs in Midrand, Gauteng. Professional mechanical and electrical engineering services.",
+  "url": "https://werhuworks.co.za",
+  "telephone": "+27789078438",
+  "email": "info@werhuworks.co.za",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "La Maison Royale, 82 Tamboti Rd, Witpoort 406-Jr",
+    "addressLocality": "Midrand",
+    "addressRegion": "Gauteng",
+    "postalCode": "1685",
+    "addressCountry": "ZA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -25.990,
+    "longitude": 28.130
+  },
+  "openingHours": ["Mo-Su 08:00-17:00"],
+  "priceRange": "$$",
+  "areaServed": {
+    "@type": "City",
+    "name": "Midrand"
+  }
+}
+</script>
+<style>
+
+:root{--primary:#E8A838;--primary-dark:#C48A2A;--black:#111111;--dark:#1C1C1C;--gray:#666666;--light-gray:#F8F8F8;--white:#FFFFFF;--border:#E5E5E5;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:#1a1a1a;line-height:1.6;background:#fff}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+.header{position:sticky;top:0;z-index:1000;background:var(--black);border-bottom:1px solid rgba(255,255,255,0.06)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{font-family:'Bebas Neue',sans-serif;font-size:32px;color:var(--white);letter-spacing:1px}
+.logo span{color:var(--primary)}
+.nav{display:flex;gap:32px;align-items:center}
+.nav a{color:rgba(255,255,255,0.75);font-size:14px;font-weight:600;transition:color 0.2s;text-transform:uppercase;letter-spacing:0.5px}
+.nav a:hover{color:var(--primary)}
+.nav a.active{color:var(--primary)}
+.mobile-phone{display:none;color:var(--primary);font-weight:800;font-size:14px}
+.cta-btn{background:var(--primary);color:var(--black);padding:10px 22px;border-radius:6px;font-weight:700;font-size:13px;transition:all 0.2s;border:none;cursor:pointer;text-transform:uppercase;letter-spacing:0.5px}
+.cta-btn:hover{background:var(--primary-dark);transform:translateY(-1px)}
+.menu-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px}
+.menu-toggle span{display:block;width:24px;height:2px;background:var(--white);border-radius:1px}
+.hero{position:relative;min-height:92vh;display:flex;align-items:center;background:var(--black);overflow:hidden}
+.hero-bg{position:absolute;inset:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;opacity:0.35}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(17,17,17,0.97) 0%,rgba(17,17,17,0.7) 55%,rgba(17,17,17,0.3) 100%)}
+.hero-content{position:relative;z-index:2;max-width:660px;padding:100px 0}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(232,168,56,0.12);color:var(--primary);padding:8px 16px;border-radius:100px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:24px;border:1px solid rgba(232,168,56,0.25)}
+.hero-tag .pulse{width:8px;height:8px;background:var(--primary);border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
+.hero h1{font-family:'Bebas Neue',sans-serif;font-size:80px;line-height:0.95;color:var(--white);margin-bottom:20px;letter-spacing:1px}
+.hero h1 span{color:var(--primary)}
+.hero-subtitle{font-size:18px;color:rgba(255,255,255,0.72);margin-bottom:36px;line-height:1.65;max-width:520px}
+.hero-ctas{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:56px}
+.btn-primary{display:inline-flex;align-items:center;gap:10px;background:var(--primary);color:var(--black);padding:16px 32px;border-radius:8px;font-weight:800;font-size:15px;transition:all 0.2s;border:none;cursor:pointer}
+.btn-primary:hover{background:var(--primary-dark);transform:translateY(-2px);box-shadow:0 8px 24px rgba(232,168,56,0.3)}
+.btn-secondary{display:inline-flex;align-items:center;gap:10px;background:transparent;color:var(--white);padding:16px 32px;border-radius:8px;font-weight:700;font-size:15px;border:1px solid rgba(255,255,255,0.25);transition:all 0.2s}
+.btn-secondary:hover{background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.5)}
+.trust-bar{background:var(--dark);border-top:1px solid rgba(255,255,255,0.05);padding:48px 0}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
+.trust-item{border-right:1px solid rgba(255,255,255,0.06);padding:0 16px}
+.trust-item:last-child{border-right:none}
+.trust-number{font-family:'Bebas Neue',sans-serif;font-size:44px;color:var(--primary);line-height:1;display:block}
+.trust-label{font-size:13px;color:rgba(255,255,255,0.55);margin-top:6px;display:block;font-weight:500}
+.section{padding:100px 0}
+.section-light{background:var(--light-gray)}
+.section-header{text-align:center;max-width:640px;margin:0 auto 64px}
+.section-tag{display:inline-block;color:var(--primary);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:2px;margin-bottom:12px}
+.section-header h2{font-family:'Bebas Neue',sans-serif;font-size:52px;line-height:1.05;margin-bottom:16px;color:var(--black)}
+.section-header p{color:var(--gray);font-size:17px;line-height:1.6}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.service-card{background:var(--white);border-radius:14px;overflow:hidden;border:1px solid var(--border);transition:all 0.35s}
+.service-card:hover{transform:translateY(-6px);box-shadow:0 24px 48px rgba(0,0,0,0.08)}
+.service-card img{width:100%;height:240px;object-fit:cover}
+.service-card-content{padding:28px}
+.service-card h3{font-size:18px;font-weight:800;margin-bottom:10px;color:var(--black)}
+.service-card p{font-size:14px;color:var(--gray);margin-bottom:18px;line-height:1.6}
+.service-card a{color:var(--primary);font-weight:700;font-size:14px;display:inline-flex;align-items:center;gap:6px;transition:gap 0.2s}
+.service-card a:hover{gap:10px}
+.features-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:40px}
+.feature-item{text-align:center}
+.feature-icon{width:72px;height:72px;background:rgba(232,168,56,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 24px;color:var(--primary);font-size:26px}
+.feature-item h3{font-size:17px;font-weight:800;margin-bottom:10px;color:var(--black)}
+.feature-item p{font-size:14px;color:var(--gray);line-height:1.6}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.gallery-item{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:4/3}
+.gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform 0.6s}
+.gallery-item:hover img{transform:scale(1.08)}
+.gallery-overlay{position:absolute;inset:0;background:linear-gradient(transparent 35%,rgba(0,0,0,0.85));display:flex;align-items:flex-end;padding:28px}
+.gallery-overlay h4{color:var(--white);font-size:16px;font-weight:700}
+.gallery-overlay span{color:var(--primary);font-size:13px;font-weight:600}
+.testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.testimonial-card{background:var(--white);padding:36px;border-radius:14px;border:1px solid var(--border);position:relative}
+.testimonial-card::before{content:'"';font-family:Georgia,serif;font-size:64px;color:var(--primary);opacity:0.2;line-height:1;position:absolute;top:16px;left:24px}
+.testimonial-stars{color:var(--primary);font-size:14px;margin-bottom:20px;letter-spacing:2px;position:relative}
+.testimonial-card p{font-size:15px;color:var(--gray);margin-bottom:24px;line-height:1.65;position:relative;font-style:italic}
+.testimonial-author{font-weight:800;font-size:14px;color:var(--black);position:relative}
+.testimonial-author span{display:block;font-weight:500;color:var(--gray);font-size:13px;margin-top:2px}
+.cta-section{padding:80px 0}
+.cta-box{background:var(--black);border-radius:20px;padding:80px 48px;text-align:center;position:relative;overflow:hidden}
+.cta-box::before{content:'';position:absolute;top:-40%;left:-20%;width:140%;height:140%;background:radial-gradient(circle,rgba(232,168,56,0.12) 0%,transparent 65%)}
+.cta-box h2{font-family:'Bebas Neue',sans-serif;font-size:56px;color:var(--white);position:relative;margin-bottom:16px;line-height:1}
+.cta-box p{color:rgba(255,255,255,0.65);font-size:18px;position:relative;max-width:520px;margin:0 auto 32px;line-height:1.6}
+.cta-buttons{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;position:relative}
+.footer{background:var(--black);color:rgba(255,255,255,0.55);padding:80px 0 32px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:48px;margin-bottom:64px}
+.footer-brand h3{font-family:'Bebas Neue',sans-serif;font-size:32px;color:var(--white);margin-bottom:16px;letter-spacing:1px}
+.footer-brand h3 span{color:var(--primary)}
+.footer-brand p{font-size:14px;line-height:1.7;margin-bottom:24px;color:rgba(255,255,255,0.55)}
+.footer-social{display:flex;gap:14px}
+.footer-social a{width:44px;height:44px;background:rgba(255,255,255,0.07);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--white);transition:all 0.25s;font-size:16px}
+.footer-social a:hover{background:var(--primary);color:var(--black);transform:translateY(-2px)}
+.footer-links h4{color:var(--white);font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:20px}
+.footer-links ul{list-style:none}
+.footer-links li{margin-bottom:12px}
+.footer-links a{font-size:14px;color:rgba(255,255,255,0.55);transition:color 0.2s}
+.footer-links a:hover{color:var(--primary)}
+.footer-contact h4{color:var(--white);font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:20px}
+.footer-contact ul{list-style:none}
+.footer-contact li{display:flex;align-items:flex-start;gap:12px;margin-bottom:16px;font-size:14px;color:rgba(255,255,255,0.55)}
+.footer-contact a{color:rgba(255,255,255,0.55);transition:color 0.2s}
+.footer-contact a:hover{color:var(--primary)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.06);padding-top:32px;text-align:center;font-size:13px;color:rgba(255,255,255,0.35)}
+.whatsapp-float{position:fixed;bottom:24px;right:24px;width:60px;height:60px;background:#25D366;color:var(--white);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 24px rgba(37,211,102,0.4);z-index:999;transition:all 0.25s;font-size:28px}
+.whatsapp-float:hover{transform:scale(1.1) rotate(-5deg);box-shadow:0 6px 32px rgba(37,211,102,0.5)}
+@media(max-width:768px){
+.menu-toggle{display:flex}
+.nav{display:none;position:absolute;top:72px;left:0;right:0;background:var(--black);flex-direction:column;padding:28px 24px;gap:18px;border-top:1px solid rgba(255,255,255,0.08);align-items:flex-start}
+.nav.active{display:flex}
+.nav a{font-size:15px}
+.mobile-phone{display:block;margin-right:auto;padding-left:16px}
+.hero h1{font-size:52px}
+.hero{min-height:85vh}
+.hero-content{padding:60px 0 80px}
+.trust-grid{grid-template-columns:repeat(2,1fr);gap:28px}
+.trust-item{border-right:none;border-bottom:1px solid rgba(255,255,255,0.06);padding-bottom:20px}
+.trust-item:nth-child(3),.trust-item:nth-child(4){border-bottom:none;padding-bottom:0}
+.services-grid,.features-grid,.gallery-grid,.testimonials-grid{grid-template-columns:1fr}
+.footer-grid{grid-template-columns:1fr;gap:40px}
+.cta-box{padding:48px 28px}
+.cta-box h2{font-size:40px}
+.section-header h2{font-size:40px}
+.section{padding:64px 0}
+.features-grid{gap:32px}
+.gallery-grid{gap:14px}
+}
+@media(max-width:480px){
+.hero h1{font-size:44px}
+.trust-grid{grid-template-columns:1fr}
+.trust-item{border-bottom:1px solid rgba(255,255,255,0.06);padding-bottom:20px}
+.trust-item:last-child{border-bottom:none;padding-bottom:0}
+.hero-ctas{flex-direction:column}
+.btn-primary,.btn-secondary{width:100%;justify-content:center}
+.cta-buttons{flex-direction:column}
+.cta-buttons .btn-primary,.cta-buttons .btn-secondary{width:100%;justify-content:center}
+}
+.page-header{background:var(--black);padding:140px 0 80px;text-align:center}
+.page-header h1{font-family:'Bebas Neue',sans-serif;font-size:64px;color:var(--white);line-height:1;margin-bottom:16px}
+.page-header p{color:rgba(255,255,255,0.65);font-size:18px;max-width:600px;margin:0 auto;line-height:1.6}
+.page-header .section-tag{color:var(--primary)}
+
+</style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo">
-                <img src="images/logo.png" alt="Werhu Works">
-            </a>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Our Services</a></li>
-                <li><a href="work.html">Our Work</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="book.html" class="nav-cta">Book a Service</a></li>
-            </ul>
-        </div>
+
+<!-- Header -->
+<header class="header" id="header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">WERHU <span>WORKS</span></a>
+    <a href="tel:0789078438" class="mobile-phone"><i class="fas fa-phone" style="margin-right:6px"></i>078 907 8438</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <nav class="nav" id="navMenu">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="tel:0789078438" class="cta-btn"><i class="fas fa-phone"></i> 078 907 8438</a>
     </nav>
+  </div>
+</header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-bg">
-            <img src="images/mechanic-3.jpg" alt="Werhu Works professional mechanic servicing a car">
-            <div class="hero-overlay"></div>
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=1600&q=80" alt="Professional mechanic working on car engine in Midrand workshop">
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="container hero-content">
+    <div class="hero-tag"><span class="pulse"></span> Now Serving Midrand & Surrounding Areas</div>
+    <h1>Expert Car Care<br><span>At Your Doorstep</span></h1>
+    <p class="hero-subtitle">Full-service mechanical & electrical repairs for all makes and models. Quality parts, certified workmanship, and fair pricing — backed by over 10 years of hands-on experience. We come to you.</p>
+    <div class="hero-ctas">
+      <a href="contact.html" class="btn-primary"><i class="fas fa-calendar-check"></i> Book a Service</a>
+      <a href="https://wa.me/27789078438" class="btn-secondary" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+    </div>
+    <div class="trust-bar" style="background:transparent;border-top:none;padding:0">
+      <div class="trust-grid" style="grid-template-columns:repeat(3,1fr);text-align:left">
+        <div class="trust-item" style="border-right:1px solid rgba(255,255,255,0.1)">
+          <span class="trust-number">Same-Day</span>
+          <span class="trust-label">Service Available</span>
         </div>
-        <div class="container hero-content">
-            <div class="hero-badge">
-                <span class="pulse"></span>
-                Now Serving Midrand & Surrounding Areas
-            </div>
-            <h1>Expert Car Care<br><span class="highlight">In Midrand</span></h1>
-            <p class="hero-subtitle">Full-service mechanical & electrical repairs for all makes and models. Quality parts, certified workmanship, and fair pricing — backed by over 10 years of experience.</p>
-            <div class="hero-ctas">
-                <a href="book.html" class="btn btn-primary">Book a Service</a>
-                <a href="https://wa.me/27789078438" class="btn btn-secondary" target="_blank">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                    WhatsApp Us
-                </a>
-            </div>
-            <div class="hero-trust">
-                <div class="trust-item">
-                    <span class="trust-number">Same-Day</span>
-                    <span class="trust-label">Service Available</span>
-                </div>
-                <div class="trust-item">
-                    <span class="trust-number">10+ Years</span>
-                    <span class="trust-label">Experience</span>
-                </div>
-                <div class="trust-item">
-                    <span class="trust-number">All Makes</span>
-                    <span class="trust-label">& Models</span>
-                </div>
-            </div>
+        <div class="trust-item" style="border-right:1px solid rgba(255,255,255,0.1)">
+          <span class="trust-number">10+ Years</span>
+          <span class="trust-label">Experience</span>
         </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">What We Do</span>
-                <h2>Our Services</h2>
-                <p>Comprehensive servicing and repairs using quality parts and manufacturer-approved methods.</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                    </div>
-                    <h3>Oil Change Service</h3>
-                    <p>Full oil and filter replacement using quality lubricants to keep your engine protected and performing.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
-                    </div>
-                    <h3>Minor & Major Service</h3>
-                    <p>Comprehensive servicing per manufacturer specs. From spark plugs to air filters, we handle it all.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v4m0 12v4m10-10h-4M6 12H2m15.07-6.93l-2.83 2.83M9.76 14.24l-2.83 2.83m11.14 0l-2.83-2.83M9.76 9.76L6.93 6.93"/></svg>
-                    </div>
-                    <h3>Clutch Replacement</h3>
-                    <p>Full clutch kit replacement including pressure plate, disc, and release bearing. Done on-site.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                    </div>
-                    <h3>Brake Replacement</h3>
-                    <p>Pads, discs, and fluid replacement. Safety-first approach with thorough testing before we leave.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-                    </div>
-                    <h3>Diagnostics & Checks</h3>
-                    <p>Full computer diagnostics and point checks. We identify issues fast and explain them clearly.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
-                    </div>
-                    <h3>Cooling System</h3>
-                    <p>Radiator, thermostat, water pump, and coolant services. Prevent overheating before it happens.</p>
-                </div>
-            </div>
+        <div class="trust-item">
+          <span class="trust-number">All Makes</span>
+          <span class="trust-label">& Models</span>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- About / Why Choose Us -->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-content about-content-full">
-                    <span class="section-tag">Why Choose Us</span>
-                    <h2>Why Choose Werhu Works</h2>
-                    <p>Founded by Grant Ngobeni, Werhu Works is built on over 10 years of hands-on experience at top dealerships including Bidvest McCarthy VW and Toyota. We specialise in mechanical and electrical repairs for all vehicle brands — from everyday commuters to high-performance cars. Quality work, honest pricing, and customer satisfaction are at the core of everything we do.</p>
-                    <div class="booking-options">
-                        <h4>Two Ways to Book</h4>
-                        <div class="booking-options-grid">
-                            <div class="booking-option">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="2" ry="2"/><path d="M16 8l2-2 4 4-2 2"/><path d="M1 16h14"/></svg>
-                                <div>
-                                    <strong>In-Shop</strong>
-                                    <span>Bring your car to our fully equipped workshop in Midrand.</span>
-                                </div>
-                            </div>
-                            <div class="booking-option">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
-                                <div>
-                                    <strong>Mobile Service</strong>
-                                    <span>We come to your home, office, or roadside — fully kitted van.</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <ul class="about-list">
-                        <li>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                            <span>Fully equipped workshop</span>
-                        </li>
-                        <li>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                            <span>All major vehicle brands serviced</span>
-                        </li>
-                        <li>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                            <span>Genuine and quality aftermarket parts</span>
-                        </li>
-                        <li>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                            <span>Transparent pricing — no hidden costs</span>
-                        </li>
-                        <li>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                            <span>Midrand, Centurion, Pretoria & surrounds</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+<!-- Trust Bar -->
+<section class="trust-bar">
+  <div class="container">
+    <div class="trust-grid">
+      <div class="trust-item">
+        <span class="trust-number">2,500+</span>
+        <span class="trust-label">Cars Serviced</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-number">10+</span>
+        <span class="trust-label">Years Experience</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-number">24/7</span>
+        <span class="trust-label">Emergency Support</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-number">100%</span>
+        <span class="trust-label">Midrand Local</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section class="section section-light" id="services">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">What We Do</span>
+      <h2>Our Services</h2>
+      <p>Comprehensive mobile servicing and repairs using quality parts and manufacturer-approved methods. We bring the workshop to your home or office.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1621905252507-b35f3d91e20f?w=800&q=80" alt="Oil change service on car engine">
+        <div class="service-card-content">
+          <h3>Oil Change Service</h3>
+          <p>Keep your engine running smoothly with our quick, professional oil changes using quality synthetic and mineral oils.</p>
+          <a href="services.html#oil-change">Learn More <i class="fas fa-arrow-right"></i></a>
         </div>
-    </section>
-
-    <!-- Stats -->
-    <section class="stats">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-number" data-count="12">0</div>
-                    <div class="stat-label">Years of Experience</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-count="165">0</div>
-                    <div class="stat-label">Satisfied Clients</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-count="84">0</div>
-                    <div class="stat-label">Professional Mechanics</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-count="42">0</div>
-                    <div class="stat-label">Custom Projects</div>
-                </div>
-            </div>
+      </div>
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80" alt="Car major service inspection">
+        <div class="service-card-content">
+          <h3>Minor & Major Service</h3>
+          <p>From routine check-ups to full major services — plugs, filters, fluids, and a complete health check for your vehicle.</p>
+          <a href="services.html#servicing">Learn More <i class="fas fa-arrow-right"></i></a>
         </div>
-    </section>
-
-    <!-- How It Works -->
-    <section class="process">
-        <div class="container">
-            <div class="section-header center">
-                <span class="section-tag">Simple Process</span>
-            </div>
-            <div class="process-grid">
-                <div class="process-step">
-                    <div class="process-number">01</div>
-                    <h3>Get in Touch</h3>
-                    <p>Book online or send a WhatsApp. We'll confirm within minutes.</p>
-                </div>
-                <div class="process-arrow">
-                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-                </div>
-                <div class="process-step">
-                    <div class="process-number">02</div>
-                    <h3>We Get to Work</h3>
-                    <p>Your car is inspected, diagnosed, and repaired by our certified technicians using quality parts.</p>
-                </div>
-                <div class="process-arrow">
-                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-                </div>
-                <div class="process-step">
-                    <div class="process-number">03</div>
-                    <h3>Fixed & Tested</h3>
-                    <p>We complete the work, test everything thoroughly, and clean up before we leave.</p>
-                </div>
-            </div>
+      </div>
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1551522435-a13afa10f103?w=800&q=80" alt="Brake disc and pad replacement">
+        <div class="service-card-content">
+          <h3>Brake Replacement</h3>
+          <p>Safety first. We replace pads, discs, and fluid with quality parts, then road-test every vehicle before handover.</p>
+          <a href="services.html#brakes">Learn More <i class="fas fa-arrow-right"></i></a>
         </div>
-    </section>
-
-    <!-- Gallery -->
-    <section class="gallery" id="gallery">
-        <div class="container">
-            <div class="section-header center">
-                <span class="section-tag">Our Work</span>
-                <h2>Real Jobs. Real Results.</h2>
-            </div>
-            <div class="gallery-grid">
-                <div class="gallery-item large">
-                    <img src="images/mechanic-3.jpg" alt="Mechanic servicing white VW Golf">
-                    <div class="gallery-caption">On-site engine service</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/mechanic-2.jpg" alt="BMW oil and filter service">
-                    <div class="gallery-caption">BMW oil service</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/mechanic-5.jpg" alt="Audi brake and clutch replacement">
-                    <div class="gallery-caption">Brake & clutch replacement</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/mechanic-1.jpg" alt="Mercedes service with tools">
-                    <div class="gallery-caption">Mercedes diagnostic & service</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/mechanic-4.jpg" alt="VW Polo battery replacement">
-                    <div class="gallery-caption">VW Polo battery service</div>
-                </div>
-            </div>
+      </div>
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1486262712438-b1c9a22ee3d0?w=800&q=80" alt="Clutch replacement mechanic">
+        <div class="service-card-content">
+          <h3>Clutch Replacement</h3>
+          <p>Expert clutch kit and flywheel replacement for all vehicle types. Smooth shifting, guaranteed workmanship.</p>
+          <a href="services.html#clutch">Learn More <i class="fas fa-arrow-right"></i></a>
         </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="testimonials">
-        <div class="container">
-            <div class="section-header center">
-                <span class="section-tag">Testimonials</span>
-                <h2>What Clients Say</h2>
-                <p>We are always happy to hear your honest opinion about our house call mechanic and the experience that you get from us.</p>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                    </div>
-                    <p class="testimonial-text">"The service received from Werhu Works Engineering was exceptional. The technician provided a good service inspection to the car, fitted new brake pads and did an interval service. The technician went an extra mile by also providing tips on how to maintain the car."</p>
-                    <div class="testimonial-author">
-                        <strong>Chris W</strong>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                    </div>
-                    <p class="testimonial-text">"Very professional, reliable and excellent quality of work. I have been servicing my car with Werhu since 2020 and I am happy with his work."</p>
-                    <div class="testimonial-author">
-                        <strong>Thato R</strong>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                    </div>
-                    <p class="testimonial-text">"A few days ago I brought my Audi A5 Coupe for service; I was impressed with the quality and expertise of the team. They even collected my vehicle from my work office and delivered it back that same afternoon. I was constantly updated of the findings and changes needed to be done on the car. Also very friendly team, i will recommend them to anyone."</p>
-                    <div class="testimonial-author">
-                        <strong>Jean M</strong>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1530046339160-8d45189c3a1b?w=800&q=80" alt="Car diagnostics and computer scan">
+        <div class="service-card-content">
+          <h3>Diagnostics & Checks</h3>
+          <p>Full computer diagnostic scan, fault-code interpretation, and live-data analysis to pinpoint issues fast.</p>
+          <a href="services.html#diagnostics">Learn More <i class="fas fa-arrow-right"></i></a>
         </div>
-    </section>
-
-    <!-- Booking Section -->
-    <section class="booking" id="booking">
-        <div class="container">
-            <div class="booking-grid">
-                <div class="booking-info">
-                    <span class="section-tag">Book Now</span>
-                    <h2>Schedule Your Service</h2>
-                    <p>Choose a date and time that works for you. We'll send a confirmation and arrive ready to work.</p>
-                    <div class="booking-features">
-                        <div class="booking-feature">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                            <span>Mon–Sat: 08:00 – 18:00</span>
-                        </div>
-                        <div class="booking-feature">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                            <span>Midrand & surrounding areas</span>
-                        </div>
-                        <div class="booking-feature">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                            <span>Call or WhatsApp for emergencies</span>
-                        </div>
-                    </div>
-                    <a href="tel:27789078438" class="booking-phone">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                        <span>Call Now</span>
-                    </a>
-                </div>
-                <div class="booking-widget">
-                    <!-- Booking Widget -->
-                    <div class="booking-widget-placeholder">
-                        <div class="booking-widget-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                        </div>
-                        <h3>Online Booking</h3>
-                        <p>Schedule your car service in minutes. Pick your service, choose a time, and we'll confirm your booking.</p>
-                        <a href="book.html" class="btn btn-primary">Book a Service</a>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1606577924006-27d5b0939a56?w=800&q=80" alt="Car cooling system and aircon service">
+        <div class="service-card-content">
+          <h3>Cooling & Aircon</h3>
+          <p>Stay cool in Gauteng heat. We repair radiators, thermostats, and recharge AC systems with full leak testing.</p>
+          <a href="services.html#cooling">Learn More <i class="fas fa-arrow-right"></i></a>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Contact / Footer -->
-    <footer class="footer" id="contact">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <img src="images/logo.png" alt="Werhu Works" class="footer-logo">
-                    <p>Expert mechanical and electrical car repairs in Midrand, Gauteng. Quality workmanship you can trust.</p>
-                    <div class="footer-social">
-                        <a href="https://www.facebook.com/WerhuWorksEngineeringServices" target="_blank" aria-label="Facebook">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-                        </a>
-                        <a href="https://wa.me/27789078438" target="_blank" aria-label="WhatsApp">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="footer-links">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="#services">Oil Change</a></li>
-                        <li><a href="#services">Minor & Major Service</a></li>
-                        <li><a href="#services">Clutch Replacement</a></li>
-                        <li><a href="#services">Brake Replacement</a></li>
-                        <li><a href="#services">Diagnostics</a></li>
-                        <li><a href="#services">Cooling System</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Service Areas</h4>
-                    <ul>
-                        <li>Midrand</li>
-                        <li>Centurion</li>
-                        <li>Pretoria East</li>
-                        <li>Tembisa</li>
-                        <li>Kempton Park</li>
-                        <li>Sandton</li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                            Midrand, Gauteng, South Africa
-                        </li>
-                        <li>
-                            <a href="tel:27789078438">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                                Phone Number
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://wa.me/27789078438" target="_blank">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-                                WhatsApp
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; <span id="year"></span> Werhu Works. All rights reserved.</p>
-            </div>
+<!-- Why Choose Us -->
+<section class="section" id="why-us">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Why Werhu Works</span>
+      <h2>Built Different. Built for Midrand.</h2>
+      <p>We are not a franchise. We are a local, owner-operated mobile mechanic service that treats every car like it is our own.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-item">
+        <div class="feature-icon"><i class="fas fa-house-chimney"></i></div>
+        <h3>House Call Service</h3>
+        <p>We come to your home, office, or roadside. No need to tow your car or waste hours at a workshop.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon"><i class="fas fa-shield-halved"></i></div>
+        <h3>Quality Parts Only</h3>
+        <p>OEM and quality aftermarket parts with warranties up to 12 months. No cheap knock-offs.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon"><i class="fas fa-hand-holding-dollar"></i></div>
+        <h3>Upfront Pricing</h3>
+        <p>Clear quotes before we start. No hidden fees, no surprise charges, and no call-out fee in Midrand.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon"><i class="fas fa-award"></i></div>
+        <h3>Certified Experience</h3>
+        <p>Founder Grant Ngobeni trained at Bidvest McCarthy VW & Toyota. Over 10 years of real experience.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section class="section section-light" id="gallery">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Our Work</span>
+      <h2>Recent Jobs</h2>
+      <p>Real work, real cars, real results. Here is a glimpse of what we handle every day in Midrand.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=800&q=80" alt="Car engine service in progress">
+        <div class="gallery-overlay">
+          <div><h4>Full Engine Service</h4><span>BMW 3 Series</span></div>
         </div>
-    </footer>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1611825719244-9496f43f3b30?w=800&q=80" alt="Brake system inspection and replacement">
+        <div class="gallery-overlay">
+          <div><h4>Brake Overhaul</h4><span>Toyota Hilux</span></div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1487754180451-c456f743a0f7?w=800&q=80" alt="Auto parts and timing chain kit">
+        <div class="gallery-overlay">
+          <div><h4>Timing Chain Kit</h4><span>VW Polo</span></div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1625043483328-1fb3336024af?w=800&q=80" alt="Car air conditioning recharge and repair">
+        <div class="gallery-overlay">
+          <div><h4>Aircon Recharge</h4><span>Ford Ranger</span></div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1608506479722-5656531b9326?w=800&q=80" alt="Clutch replacement job on a sedan">
+        <div class="gallery-overlay">
+          <div><h4>Clutch Replacement</h4><span>Hyundai i20</span></div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1632823471565-3d5741d8c4b4?w=800&q=80" alt="Car diagnostic scan tool in use">
+        <div class="gallery-overlay">
+          <div><h4>Diagnostic Scan</h4><span>Mercedes C-Class</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- WhatsApp Float -->
-    <a href="https://wa.me/27789078438" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    </a>
+<!-- Testimonials -->
+<section class="section" id="testimonials">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Testimonials</span>
+      <h2>What Our Customers Say</h2>
+      <p>Real reviews from real Midrand drivers who trust Werhu Works with their vehicles.</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p>Grant came to my house in Noordwyk and changed my oil and filters in under an hour. Professional, clean, and he explained everything. Will definitely use Werhu Works again.</p>
+        <div class="testimonial-author">Thabo Mokoena<span>Noordwyk, Midrand</span></div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p>My clutch started slipping on the way to work. Called Werhu Works, they booked me the same day and did the replacement at my office. Saved me so much hassle. Highly recommend!</p>
+        <div class="testimonial-author">Sarah-Jane Peters<span>Vorna Valley, Midrand</span></div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p>I have been taking my BMW to Werhu Works for two years now. Honest pricing, no upselling, and they always show me the old parts. That is the kind of mechanic you keep.</p>
+        <div class="testimonial-author">Rajesh Naidoo<span>Kyalami, Midrand</span></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <script src="script.js"></script>
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-box">
+      <h2>Ready to Get Your Car Fixed?</h2>
+      <p>Book a service today and experience the convenience of a mobile mechanic who comes to you. Same-day appointments available in Midrand.</p>
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn-primary"><i class="fas fa-calendar-check"></i> Book Now</a>
+        <a href="https://wa.me/27789078438" class="btn-secondary" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>WERHU <span>WORKS</span></h3>
+        <p>Professional mobile mechanical and electrical engineering services in Midrand, Gauteng. We bring the workshop to your doorstep.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/WerhuWorksEngineeringServices" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/werhuworksengineeringservices/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@werhu_workx" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="https://wa.me/27789078438" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#oil-change">Oil Change</a></li>
+          <li><a href="services.html#servicing">Minor & Major Service</a></li>
+          <li><a href="services.html#clutch">Clutch Replacement</a></li>
+          <li><a href="services.html#brakes">Brake Replacement</a></li>
+          <li><a href="services.html#diagnostics">Diagnostics</a></li>
+          <li><a href="services.html#cooling">Cooling & Aircon</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <ul>
+          <li><i class="fas fa-location-dot"></i> La Maison Royale, 82 Tamboti Rd, Witpoort 406-Jr, Midrand, 1685</li>
+          <li><a href="tel:0789078438"><i class="fas fa-phone"></i> 078 907 8438</a></li>
+          <li><a href="mailto:info@werhuworks.co.za"><i class="fas fa-envelope"></i> info@werhuworks.co.za</a></li>
+          <li><a href="https://wa.me/27789078438" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp Message</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Werhu Works. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/27789078438" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+<script>
+const menuToggle=document.getElementById('menuToggle');
+const navMenu=document.getElementById('navMenu');
+menuToggle.addEventListener('click',function(){navMenu.classList.toggle('active');});
+</script>
 </body>
 </html>

@@ -2,375 +2,531 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta property="og:title" content="MaTe Business Group | Roofing, Paving & Tiling Specialists Midrand">
-<meta property="og:description" content="Expert roofing, paving, and tiling services in Midrand. 20+ years experience, 500+ projects, 10-year waterproofing guarantee. Free quotes.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://images.unsplash.com/photo-1623490879046-75abc98e1176?auto=format&fit=crop&w=800&q=80">
-<meta property="og:locale" content="en_ZA">
-
-<meta name="description" content="Expert roofing, paving, and tiling services in Midrand. 20+ years experience, 500+ projects, 10-year waterproofing guarantee. Free quotes.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MaTe Business Group | Roofing / Paving / Tiling Midrand</title>
+<title>MaTe Business Group | Roofing, Waterproofing & Construction — Midrand, Gauteng</title>
+<meta name="description" content="MaTe Business Group — 20+ years, 500+ projects. Expert roofing, waterproofing, paving, tiling, painting & structural repairs in Midrand, Gauteng. Call 073 772 1177.">
+<meta property="og:title" content="MaTe Business Group | Roofing, Waterproofing & Construction">
+<meta property="og:description" content="20+ years of construction excellence in Midrand, Gauteng. Roofing, waterproofing, paving, tiling & more. Built to last.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://matebusinessgroup.co.za">
+<meta property="og:image" content="https://images.unsplash.com/photo-1605152276897-4f618f831968?w=1200&q=80">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { font-family:'Montserrat',sans-serif; color:#2c2c2c; background:#fff; line-height:1.6; }
+img { max-width:100%; display:block; }
+a { text-decoration:none; color:inherit; }
+
+/* Header */
+header { position:sticky; top:0; z-index:1000; background:#1a1a1a; box-shadow:0 2px 10px rgba(0,0,0,0.3); }
+.header-top { background:#cf152d; color:#fff; padding:6px 0; font-size:13px; font-weight:600; }
+.header-top .container { display:flex; justify-content:space-between; align-items:center; }
+.header-top a { color:#fff; }
+.header-top i { margin-right:5px; }
+.container { max-width:1200px; margin:0 auto; padding:0 20px; }
+.header-main { display:flex; justify-content:space-between; align-items:center; padding:12px 0; }
+.logo { font-size:22px; font-weight:800; color:#fff; letter-spacing:1px; }
+.logo span { color:#cf152d; }
+.logo small { display:block; font-size:10px; font-weight:500; color:#aaa; letter-spacing:2px; text-transform:uppercase; }
+.nav-desktop { display:flex; gap:28px; align-items:center; }
+.nav-desktop a { color:#fff; font-size:14px; font-weight:600; text-transform:uppercase; letter-spacing:0.5px; transition:color 0.3s; }
+.nav-desktop a:hover { color:#cf152d; }
+.phone-header { display:flex; align-items:center; gap:8px; color:#fff; font-weight:700; font-size:15px; }
+.phone-header i { color:#cf152d; font-size:18px; }
+.btn { display:inline-block; padding:12px 28px; border-radius:4px; font-weight:700; font-size:14px; text-transform:uppercase; letter-spacing:0.5px; transition:all 0.3s; cursor:pointer; border:none; }
+.btn-primary { background:#cf152d; color:#fff; }
+.btn-primary:hover { background:#a81024; }
+.btn-outline { background:transparent; color:#fff; border:2px solid #fff; }
+.btn-outline:hover { background:#fff; color:#1a1a1a; }
+.btn-outline-dark { background:transparent; color:#1a1a1a; border:2px solid #1a1a1a; }
+.btn-outline-dark:hover { background:#1a1a1a; color:#fff; }
+.btn-light { background:#fff; color:#1a1a1a; }
+.btn-light:hover { background:#f5f5f5; }
+.hamburger { display:none; color:#fff; font-size:24px; cursor:pointer; }
+.mobile-nav { display:none; position:absolute; top:100%; left:0; right:0; background:#1a1a1a; padding:20px; flex-direction:column; gap:16px; }
+.mobile-nav.active { display:flex; }
+.mobile-nav a { color:#fff; font-weight:600; font-size:16px; border-bottom:1px solid #333; padding-bottom:10px; }
+.mobile-nav .btn { width:100%; text-align:center; margin-top:10px; }
+.sticky-phone { display:none; position:fixed; bottom:0; left:0; right:0; background:#1a1a1a; padding:10px 20px; justify-content:space-between; align-items:center; z-index:999; border-top:2px solid #cf152d; }
+.sticky-phone a { color:#fff; font-weight:700; font-size:14px; display:flex; align-items:center; gap:6px; }
+.sticky-phone a i { color:#cf152d; }
+
+/* Hero */
+.hero { position:relative; min-height:90vh; display:flex; align-items:center; background:linear-gradient(rgba(26,26,26,0.85), rgba(26,26,26,0.9)), url('https://images.unsplash.com/photo-1605152276897-4f618f831968?w=1600&q=80') center/cover no-repeat; }
+.hero-content { color:#fff; max-width:700px; padding:60px 20px; }
+.hero-tag { display:inline-block; background:#cf152d; color:#fff; padding:6px 14px; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:2px; border-radius:3px; margin-bottom:20px; }
+.hero h1 { font-size:52px; font-weight:800; line-height:1.1; margin-bottom:20px; text-transform:uppercase; letter-spacing:1px; }
+.hero h1 span { color:#cf152d; }
+.hero-sub { font-size:18px; color:#ccc; margin-bottom:35px; line-height:1.6; }
+.hero-cta { display:flex; gap:15px; flex-wrap:wrap; margin-bottom:35px; }
+.hero-trust { display:flex; gap:20px; flex-wrap:wrap; align-items:center; }
+.hero-trust-item { display:flex; align-items:center; gap:8px; font-size:14px; color:#ddd; font-weight:600; }
+.hero-trust-item i { color:#cf152d; font-size:18px; }
+
+/* Trust Strip */
+.trust-strip { background:#f5f5f5; padding:40px 0; border-bottom:1px solid #e5e5e5; }
+.trust-strip .container { display:flex; justify-content:space-around; flex-wrap:wrap; gap:30px; }
+.trust-item { text-align:center; }
+.trust-item .icon { width:55px; height:55px; background:#cf152d; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-size:22px; margin:0 auto 12px; }
+.trust-item h4 { font-size:15px; font-weight:700; color:#1a1a1a; margin-bottom:4px; }
+.trust-item p { font-size:13px; color:#666; }
+
+/* Section Titles */
+.section-title { text-align:center; margin-bottom:50px; }
+.section-title h2 { font-size:36px; font-weight:800; color:#1a1a1a; text-transform:uppercase; margin-bottom:12px; }
+.section-title p { color:#666; font-size:16px; max-width:600px; margin:0 auto; }
+.red-line { width:60px; height:4px; background:#cf152d; margin:0 auto 20px; }
+
+/* Services */
+.services { padding:80px 0; }
+.services-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:30px; }
+.service-card { background:#fff; border-radius:6px; overflow:hidden; box-shadow:0 5px 20px rgba(0,0,0,0.08); transition:transform 0.3s, box-shadow 0.3s; }
+.service-card:hover { transform:translateY(-8px); box-shadow:0 12px 30px rgba(0,0,0,0.15); }
+.service-card img { width:100%; height:220px; object-fit:cover; }
+.service-card .content { padding:25px; }
+.service-card .content h3 { font-size:20px; font-weight:700; color:#1a1a1a; margin-bottom:10px; }
+.service-card .content p { font-size:14px; color:#666; margin-bottom:18px; line-height:1.6; }
+.service-card .content a { color:#cf152d; font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:0.5px; }
+.service-card .content a i { margin-left:5px; }
+
+/* Why Choose Us */
+.why { background:#1a1a1a; color:#fff; padding:80px 0; }
+.why .section-title h2 { color:#fff; }
+.why .section-title p { color:#aaa; }
+.why-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:30px; }
+.why-item { text-align:center; padding:30px; border:1px solid #333; border-radius:6px; transition:all 0.3s; }
+.why-item:hover { border-color:#cf152d; }
+.why-item .icon { width:70px; height:70px; background:#cf152d; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-size:28px; margin:0 auto 20px; }
+.why-item h3 { font-size:18px; font-weight:700; margin-bottom:10px; }
+.why-item p { font-size:14px; color:#aaa; line-height:1.6; }
+
+/* Gallery */
+.gallery { padding:80px 0; }
+.gallery-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:15px; }
+.gallery-item { position:relative; overflow:hidden; border-radius:4px; aspect-ratio:4/3; }
+.gallery-item img { width:100%; height:100%; object-fit:cover; transition:transform 0.5s; }
+.gallery-item:hover img { transform:scale(1.1); }
+.gallery-overlay { position:absolute; inset:0; background:rgba(207,21,45,0.85); display:flex; align-items:center; justify-content:center; opacity:0; transition:opacity 0.3s; }
+.gallery-item:hover .gallery-overlay { opacity:1; }
+.gallery-overlay span { color:#fff; font-weight:700; font-size:14px; text-transform:uppercase; letter-spacing:1px; }
+
+/* Testimonials */
+.testimonials { background:#f5f5f5; padding:80px 0; }
+.testimonials-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:30px; }
+.testimonial-card { background:#fff; padding:35px; border-radius:6px; box-shadow:0 3px 15px rgba(0,0,0,0.05); }
+.testimonial-card .stars { color:#cf152d; margin-bottom:15px; font-size:14px; }
+.testimonial-card p { font-size:15px; color:#444; line-height:1.7; margin-bottom:20px; font-style:italic; }
+.testimonial-card .author { font-weight:700; color:#1a1a1a; font-size:14px; }
+.testimonial-card .author span { font-weight:400; color:#666; display:block; font-size:13px; margin-top:3px; }
+
+/* Short Form */
+.short-form { padding:60px 0; }
+.short-form .container { max-width:700px; }
+.short-form form { display:grid; grid-template-columns:1fr 1fr; gap:15px; }
+.short-form input, .short-form textarea, .short-form select { width:100%; padding:14px; border:1px solid #ddd; border-radius:4px; font-family:'Montserrat',sans-serif; font-size:14px; }
+.short-form textarea { grid-column:span 2; min-height:100px; resize:vertical; }
+.short-form button { grid-column:span 2; }
+.short-form label { font-size:13px; font-weight:600; color:#1a1a1a; margin-bottom:5px; display:block; }
+
+/* Guarantee Banner */
+.guarantee { background:linear-gradient(rgba(207,21,45,0.9), rgba(207,21,45,0.9)), url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80') center/cover no-repeat; color:#fff; padding:70px 20px; text-align:center; }
+.guarantee h3 { font-size:32px; font-weight:800; text-transform:uppercase; margin-bottom:15px; }
+.guarantee p { font-size:18px; max-width:600px; margin:0 auto 25px; opacity:0.95; }
+.guarantee .btn-light { font-size:16px; padding:14px 35px; }
+
+/* Footer */
+footer { background:#111; color:#aaa; padding:60px 0 20px; }
+.footer-grid { display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:40px; margin-bottom:40px; }
+.footer-brand .logo { margin-bottom:15px; display:inline-block; }
+.footer-brand p { font-size:14px; line-height:1.7; margin-bottom:20px; }
+.footer-social { display:flex; gap:12px; }
+.footer-social a { width:40px; height:40px; background:#222; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; transition:background 0.3s; }
+.footer-social a:hover { background:#cf152d; }
+.footer-col h4 { color:#fff; font-size:16px; font-weight:700; margin-bottom:20px; text-transform:uppercase; }
+.footer-col a { display:block; color:#aaa; font-size:14px; margin-bottom:10px; transition:color 0.3s; }
+.footer-col a:hover { color:#cf152d; }
+.footer-col p { font-size:14px; margin-bottom:10px; }
+.footer-col p i { color:#cf152d; margin-right:8px; width:18px; }
+.footer-bottom { border-top:1px solid #222; padding-top:20px; text-align:center; font-size:13px; color:#666; }
+
+/* WhatsApp Float */
+.whatsapp-float { position:fixed; bottom:80px; right:20px; width:55px; height:55px; background:#25D366; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-size:28px; box-shadow:0 4px 12px rgba(0,0,0,0.3); z-index:998; transition:transform 0.3s; }
+.whatsapp-float:hover { transform:scale(1.1); }
+
+/* Responsive */
+@media(max-width:768px) {
+.hero h1 { font-size:36px; }
+.hero-sub { font-size:16px; }
+.nav-desktop { display:none; }
+.hamburger { display:block; }
+.sticky-phone { display:flex; }
+.services-grid, .why-grid, .testimonials-grid { grid-template-columns:1fr; }
+.gallery-grid { grid-template-columns:repeat(2,1fr); }
+.footer-grid { grid-template-columns:1fr 1fr; gap:30px; }
+.short-form form { grid-template-columns:1fr; }
+.short-form textarea { grid-column:span 1; }
+.short-form button { grid-column:span 1; }
+.trust-strip .container { gap:20px; }
+.why-item { padding:20px; }
+.whatsapp-float { bottom:70px; }
+body { padding-bottom:60px; }
+}
+@media(max-width:480px) {
+.hero h1 { font-size:28px; }
+.hero { min-height:80vh; }
+.section-title h2 { font-size:26px; }
+.footer-grid { grid-template-columns:1fr; }
+.gallery-grid { grid-template-columns:1fr; }
+.btn { padding:10px 20px; font-size:13px; }
+.guarantee h3 { font-size:24px; }
+.header-top .container { flex-direction:column; gap:4px; font-size:12px; }
+}
+</style>
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "MaTe Business Group",
-  "description": "Expert roofing, paving, and tiling services in Midrand. 20+ years experience, 500+ projects, 10-year waterproofing guarantee. Free quotes.",
-  "url": "https://mate-business-group.netlify.app",
-  "telephone": "073 772 1177 / 067 071 0386",
-  "email": "admin@matebusinessgroup.co.za",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Midrand",
-    "addressRegion": "Gauteng",
-    "addressCountry": "ZA"
-  },
-  "openingHours": "Mo-Sa 08:00-17:00",
-  "priceRange": "$$"
+"@context": "https://schema.org",
+"@type": "LocalBusiness",
+"name": "MaTe Business Group",
+"description": "Roofing, waterproofing, paving, tiling, painting, ceiling installation and structural repairs in Midrand, Gauteng.",
+"url": "https://matebusinessgroup.co.za",
+"telephone": ["+27737721177", "+27670710386"],
+"email": "admin@matebusinessgroup.co.za",
+"address": {
+"@type": "PostalAddress",
+"addressLocality": "Midrand",
+"addressRegion": "Gauteng",
+"addressCountry": "ZA"
+},
+"geo": {
+"@type": "GeoCoordinates",
+"latitude": "-25.9958",
+"longitude": "28.1336"
+},
+"areaServed": "Midrand, Gauteng, South Africa",
+"serviceType": ["Roofing", "Waterproofing", "Paving", "Tiling", "Ceiling Installation", "Painting", "Structural Repairs", "Inspections"],
+"priceRange": "$$",
+"openingHours": "Mo-Sa 07:00-18:00"
 }
 </script>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<style>
-:root{--primary:#292524;--accent:#b45309;--accent2:#d97706;--light:#f8fafc;--text:#334155;--gradient:radial-gradient(circle at 20% 50%, rgba(180,83,9,0.08) 0%, transparent 50%)}
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;color:var(--text);line-height:1.6;background:#fff}
-a{text-decoration:none;color:inherit}
-.container{max-width:1140px;margin:0 auto;padding:0 1.5rem}
-.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.9rem 1.8rem;border-radius:8px;font-weight:700;font-size:.95rem;transition:all .25s;border:none;cursor:pointer}
-.btn-primary{background:var(--accent);color:#fff;box-shadow:0 4px 14px color-mix(in srgb,var(--accent) 30%,transparent)}
-.btn-primary:hover{transform:translateY(-2px);box-shadow:0 6px 20px color-mix(in srgb,var(--accent) 40%,transparent)}
-.btn-outline{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.3);backdrop-filter:blur(10px)}
-.btn-outline:hover{background:#fff;color:var(--primary)}
-.btn-secondary{background:var(--primary);color:#fff}
-.btn-secondary:hover{background:color-mix(in srgb,var(--primary) 80%,#000)}
-.link-arrow{color:var(--accent);font-weight:600;font-size:.9rem;display:inline-flex;align-items:center;gap:.4rem}
-.link-arrow:hover{gap:.6rem}
-
-.emergency-bar{background:linear-gradient(90deg,#dc2626,#b91c1c);color:#fff;padding:.6rem 0;font-size:.9rem;text-align:center}
-.emergency-bar a{color:#fff;font-weight:700;text-decoration:underline}
-.emergency-bar i{margin-right:.4rem;animation:pulse 2s infinite}
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:.6}}
-
-header{background:var(--primary);color:#fff;padding:0;position:sticky;top:0;z-index:100;box-shadow:0 4px 20px rgba(0,0,0,.1)}
-header .container{display:flex;align-items:center;justify-content:space-between;height:64px}
-.logo{font-weight:800;font-size:1.15rem;letter-spacing:-.3px}
-.logo span{color:var(--accent)}
-nav{display:flex;align-items:center;gap:.3rem}
-nav a{padding:.5rem .9rem;border-radius:6px;font-size:.9rem;opacity:.85;transition:.2s}
-nav a:hover{opacity:1;background:rgba(255,255,255,.08)}
-nav a.active{opacity:1;color:var(--accent);font-weight:600}
-.header-cta{display:flex;align-items:center;gap:.6rem}
-.header-cta a{font-size:.85rem;padding:.55rem 1rem}
-.mobile-toggle{display:none;background:none;border:none;color:#fff;font-size:1.4rem;cursor:pointer}
-
-.hero{position:relative;background:linear-gradient(135deg,var(--primary) 0%,color-mix(in srgb,var(--primary) 60%,#000) 100%);color:#fff;padding:5rem 0 4.5rem;overflow:hidden}
-.hero::before{content:'';position:absolute;inset:0;background:var(--gradient);z-index:0}
-.hero .container{position:relative;z-index:1;display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center}
-.hero h1{font-size:2.8rem;line-height:1.08;font-weight:800;margin-bottom:1rem;letter-spacing:-.5px}
-.hero p{font-size:1.15rem;opacity:.88;margin-bottom:2rem;max-width:90%;line-height:1.6}
-.hero-badges{display:flex;gap:1rem;margin-top:1.5rem;flex-wrap:wrap}
-.badge{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);padding:.5rem 1rem;border-radius:50px;font-size:.85rem;display:inline-flex;align-items:center;gap:.4rem}
-.hero-visual{display:flex;justify-content:center;align-items:center}
-.hero-icon-circle{width:260px;height:260px;background:linear-gradient(135deg,var(--accent) 0%,var(--accent2));border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 25px 60px color-mix(in srgb,var(--accent) 35%,transparent);position:relative}
-.hero-icon-circle::after{content:'';position:absolute;inset:-10px;border-radius:50%;border:2px dashed rgba(255,255,255,.15);animation:spin 20s linear infinite}
-@keyframes spin{to{transform:rotate(360deg)}}
-.hero-icon-circle i{font-size:5rem;color:#fff}
-
-.trust-bar{background:#fff;padding:2rem 0;border-bottom:1px solid #e2e8f0}
-.trust-bar .container{display:flex;justify-content:center;gap:3rem;flex-wrap:wrap}
-.trust-item{text-align:center}
-.trust-item strong{display:block;font-size:1.6rem;color:var(--primary);font-weight:800}
-.trust-item span{font-size:.8rem;color:#64748b;text-transform:uppercase;letter-spacing:.5px}
-
-section{padding:4.5rem 0}
-.section-header{text-align:center;margin-bottom:3rem}
-.section-header h2{font-size:2.1rem;color:var(--primary);margin-bottom:.5rem;font-weight:800;letter-spacing:-.3px}
-.section-header p{color:#64748b;font-size:1.05rem;max-width:600px;margin:0 auto}
-.section-header .overline{display:inline-block;color:var(--accent);font-weight:700;font-size:.8rem;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:.5rem}
-
-.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.5rem}
-.service-card{background:#fff;padding:2rem;border-radius:12px;border:1px solid #e2e8f0;transition:all .3s;position:relative;overflow:hidden}
-.service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--accent),var(--accent2));transform:scaleX(0);transition:transform .3s}
-.service-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,.08);border-color:transparent}
-.service-card:hover::before{transform:scaleX(1)}
-.service-icon{width:52px;height:52px;background:var(--light);color:var(--accent);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin-bottom:1.2rem}
-.service-card h3{font-size:1.1rem;margin-bottom:.5rem;color:var(--primary);font-weight:700}
-.service-card p{font-size:.9rem;color:#64748b;line-height:1.6}
-
-.process-grid{display:flex;gap:1.5rem;counter-reset:step}
-.process-grid .step{flex:1;background:#fff;padding:1.8rem;border-radius:12px;border:1px solid #e2e8f0;text-align:center;position:relative}
-.process-grid .step-num{width:40px;height:40px;background:var(--accent);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;margin:0 auto 1rem;font-size:.9rem}
-.process-grid .step h4{font-size:1rem;color:var(--primary);margin-bottom:.4rem}
-.process-grid .step p{font-size:.85rem;color:#64748b}
-
-.why-section{background:linear-gradient(135deg,var(--light) 0%,#fff 100%)}
-.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
-.why-text h2{font-size:2.1rem;color:var(--primary);margin-bottom:1rem;font-weight:800}
-.why-text>p{color:#64748b;margin-bottom:1.5rem;font-size:1.05rem}
-.why-text ul{list-style:none;display:grid;gap:.7rem}
-.why-text li{display:flex;align-items:flex-start;gap:.75rem;font-size:.95rem}
-.why-text li i{color:var(--accent);margin-top:3px;font-size:1rem}
-.why-text li span{color:#475569}
-.why-visual{background:linear-gradient(135deg,var(--primary) 0%,color-mix(in srgb,var(--primary) 70%,#000) 100%);border-radius:16px;padding:3rem;display:flex;align-items:center;justify-content:center;min-height:360px;position:relative;overflow:hidden}
-.why-visual::before{content:'';position:absolute;inset:0;background:var(--gradient)}
-.why-visual i{font-size:5rem;color:var(--accent);position:relative;z-index:1}
-
-.stats-row{display:flex;gap:1.5rem;margin-top:2rem}
-.stat-box{flex:1;background:#fff;padding:1.2rem;border-radius:10px;text-align:center;border:1px solid #e2e8f0}
-.stat-box strong{display:block;font-size:1.5rem;color:var(--primary);font-weight:800}
-.stat-box span{font-size:.8rem;color:#64748b}
-
-.testimonials-section{background:var(--light)}
-.testimonial-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:1.5rem}
-.testimonial{background:#fff;padding:2rem;border-radius:12px;border:1px solid #e2e8f0;position:relative}
-.testimonial::before{content:'"';position:absolute;top:.5rem;right:1rem;font-size:3rem;color:var(--accent);opacity:.2;font-family:Georgia,serif}
-.testimonial .stars{color:#f59e0b;margin-bottom:.75rem;font-size:.85rem}
-.testimonial p{font-style:italic;color:#475569;margin-bottom:1.2rem;line-height:1.6}
-.testimonial .author{display:flex;align-items:center;gap:.6rem}
-.testimonial .author strong{color:var(--primary);font-size:.95rem}
-.testimonial .author span{color:#94a3b8;font-size:.85rem}
-
-.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
-.gallery-item{text-align:center}
-.gallery-img{height:170px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:.6rem;color:var(--accent);font-size:2.5rem;transition:transform .3s}
-.gallery-item:hover .gallery-img{transform:scale(1.03)}
-.gallery-item span{font-size:.85rem;color:#64748b;font-weight:500}
-
-.faq-section{background:#fff}
-.faq-item{background:var(--light);padding:1.3rem 1.5rem;border-radius:10px;margin-bottom:.8rem;cursor:pointer;transition:.2s}
-.faq-item:hover{background:color-mix(in srgb,var(--light) 90%,var(--accent))}
-.faq-item h4{color:var(--primary);font-size:1rem;display:flex;align-items:center;gap:.6rem}
-.faq-item h4 i{color:var(--accent);font-size:.85rem;transition:transform .2s}
-.faq-item.active h4 i{transform:rotate(45deg)}
-.faq-answer{display:none;padding-top:.8rem;color:#64748b;font-size:.9rem;line-height:1.6}
-.faq-item.active .faq-answer{display:block}
-
-.service-detail{display:flex;gap:1.5rem;padding:2rem;background:#fff;border-radius:12px;border:1px solid #e2e8f0;margin-bottom:1rem;transition:.25s}
-.service-detail:hover{box-shadow:0 8px 30px rgba(0,0,0,.06);border-color:transparent}
-.service-detail-icon{width:56px;height:56px;background:var(--light);color:var(--accent);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0}
-.service-detail-content{flex:1}
-.service-detail-content h3{font-size:1.15rem;color:var(--primary);margin-bottom:.4rem;font-weight:700}
-.service-detail-content p{color:#64748b;font-size:.9rem;margin-bottom:.6rem}
-
-.contact-section{background:var(--light)}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
-.contact-form{background:#fff;padding:2.5rem;border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,.04)}
-.contact-form h3{color:var(--primary);margin-bottom:1.5rem;font-size:1.3rem;font-weight:800}
-.form-group{margin-bottom:1.3rem}
-.form-group label{display:block;margin-bottom:.4rem;font-weight:600;color:var(--primary);font-size:.85rem;text-transform:uppercase;letter-spacing:.5px}
-.form-group input,.form-group textarea,.form-group select{width:100%;padding:.85rem 1rem;border:1.5px solid #e2e8f0;border-radius:8px;font-family:inherit;font-size:.95rem;transition:border-color .2s;background:#fff}
-.form-group input:focus,.form-group textarea:focus,.form-group select:focus{outline:none;border-color:var(--accent)}
-.form-group textarea{min-height:130px;resize:vertical}
-.contact-info h3{color:var(--primary);margin-bottom:1.5rem;font-size:1.3rem;font-weight:800}
-.info-item{display:flex;align-items:flex-start;gap:1rem;margin-bottom:1.3rem}
-.info-item i{width:44px;height:44px;background:#fff;color:var(--accent);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;box-shadow:0 2px 8px rgba(0,0,0,.05)}
-.info-item strong{display:block;color:var(--primary);font-size:.95rem;font-weight:700}
-.info-item span{color:#64748b;font-size:.9rem}
-
-.cta-section{background:var(--primary);color:#fff;padding:5rem 0;text-align:center;position:relative;overflow:hidden}
-.cta-section::before{content:'';position:absolute;inset:0;background:var(--gradient)}
-.cta-section .container{position:relative;z-index:1}
-.cta-section h2{font-size:2.4rem;margin-bottom:1rem;font-weight:800;letter-spacing:-.5px}
-.cta-section>p{opacity:.9;max-width:600px;margin:0 auto 1.8rem;font-size:1.1rem}
-.cta-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
-
-footer{background:var(--primary);color:rgba(255,255,255,.55);padding:3rem 0 1.5rem;font-size:.9rem;border-top:1px solid rgba(255,255,255,.08)}
-footer .container{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2rem}
-footer h4{color:#fff;font-size:.9rem;margin-bottom:1rem;text-transform:uppercase;letter-spacing:1px}
-footer a{display:block;color:rgba(255,255,255,.6);margin-bottom:.5rem;transition:.2s}
-footer a:hover{color:#fff}
-.footer-bottom{margin-top:2rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.08);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
-
-@media(max-width:900px){
-.hero .container,.why-grid,.contact-grid{grid-template-columns:1fr}
-.hero h1{font-size:2.1rem}
-.hero-visual{order:-1;margin-bottom:1rem}
-.hero-icon-circle{width:180px;height:180px}
-.hero-icon-circle i{font-size:3.5rem}
-.process-grid{flex-direction:column}
-.trust-bar .container{gap:1.5rem}
-.services-grid{grid-template-columns:1fr}
-.testimonial-grid{grid-template-columns:1fr}
-.service-detail{flex-direction:column;gap:1rem}
-nav{display:none;position:absolute;top:64px;left:0;right:0;background:var(--primary);padding:1rem;flex-direction:column;gap:.3rem}
-nav.active{display:flex}
-nav a{padding:.7rem 1rem}
-.header-cta{display:none}
-.mobile-toggle{display:block}
-footer .container{grid-template-columns:1fr 1fr}
-}
-@media(max-width:500px){
-footer .container{grid-template-columns:1fr}
-.stats-row{flex-direction:column}
-}
-/* Real Photo Styles - Industry Standard */
-.hero-img{width:100%;height:auto;border-radius:16px;box-shadow:0 20px 60px rgba(0,0,0,.25);object-fit:cover}
-.service-img{width:100%;height:180px;object-fit:cover;border-radius:10px;margin-bottom:1.2rem;display:block}
-.gallery-img{width:100%;height:200px;object-fit:cover;border-radius:12px;margin-bottom:.6rem;display:block;transition:transform .3s}
-.gallery-item:hover .gallery-img{transform:scale(1.03)}
-.why-img{width:100%;height:100%;object-fit:cover;border-radius:16px}
-
-</style>
 </head>
 <body>
-<div class="emergency-bar">
-    <div class="container">
-        <i class="fas fa-phone-alt"></i> <strong>Emergency?</strong> We are available 24/7. Call us now: <a href="tel:277377211770670710386">073 772 1177 / 067 071 0386</a>
-    </div>
-</div>
 
-
+<!-- Header -->
 <header>
+<div class="header-top">
 <div class="container">
-<div class="logo">MaTe Business Group<span></span></div>
-<button class="mobile-toggle" onclick="document.querySelector('nav').classList.toggle('active')"><i class="fas fa-bars"></i></button>
-<nav><a href="index.html" class="active">Home</a><a href="services.html">Services</a><a href="about.html">About Us</a><a href="contact.html">Contact Us</a></nav>
-<div class="header-cta">
-<a href="tel:277377211770670710386" class="btn btn-primary" style="padding:.55rem 1rem;font-size:.85rem"><i class="fas fa-phone"></i> 073 772 1177 / 067 071 0386</a>
+<div><i class="fas fa-phone"></i> <a href="tel:+27737721177">073 772 1177</a> / <a href="tel:+27670710386">067 071 0386</a></div>
+<div><i class="fas fa-envelope"></i> <a href="mailto:admin@matebusinessgroup.co.za">admin@matebusinessgroup.co.za</a></div>
 </div>
 </div>
-</header>
-<section class="hero">
 <div class="container">
-<div>
-<h1>Roofing, Paving & Tiling in Midrand</h1>
-<p>Expert roofing, quality paving, and precision tiling for homes and businesses. All work guaranteed.</p>
-<div class="cta-buttons">
-<a href="contact.html" class="btn btn-primary"><i class="fas fa-envelope"></i> Request Quote</a>
-<a href="services.html" class="btn btn-outline">View All Services</a>
-</div>
-<div class="hero-badges">
-<span class="badge"><i class="fas fa-star" style="color:var(--accent)"></i> Top Rated Roofing / Paving / Tiling</span>
-<span class="badge"><i class="fas fa-map-marker-alt"></i> Midrand, Gauteng</span>
-<span class="badge"><i class="fas fa-check-circle"></i> Serving All Midrand</span>
-</div>
-</div>
-<div class="hero-visual"><img src="https://images.unsplash.com/photo-1623490879046-75abc98e1176?auto=format&fit=crop&w=800&q=80" alt="Professional roofing and construction work in Midrand" class="hero-img"></div>
-</div>
-</section>
-
-<div class="trust-bar">
-<div class="container">
-<div class="trust-item"><strong>20+</strong><span>Years Exp</span></div><div class="trust-item"><strong>500+</strong><span>Projects</span></div><div class="trust-item"><strong>10-Yr</strong><span>Waterproofing</span></div><div class="trust-item"><strong>Free</strong><span>Quotes</span></div>
-</div>
-</div>
-
-<section id="services">
-<div class="container">
-<div class="section-header">
-<span class="overline">What We Do</span>
-<h2>Professional Roofing / Paving / Tiling Services</h2>
-<p>Expert solutions tailored to your needs, delivered by qualified professionals with years of experience.</p>
-</div>
-<div class="services-grid">
-<div class="service-card"><img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=400&q=80" alt="Roofing" class="service-img"><h3>Roofing</h3><p>New roof installations, repairs, waterproofing, and guttering.</p></div><div class="service-card"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=400&q=80" alt="Paving" class="service-img"><h3>Paving</h3><p>Driveway, patio, and pathway paving in various styles.</p></div><div class="service-card"><img src="https://images.unsplash.com/photo-1773414485958-10e1a4ca9a3d?auto=format&fit=crop&w=400&q=80" alt="Tiling" class="service-img"><h3>Tiling</h3><p>Floor and wall tiling for bathrooms, kitchens, and living spaces.</p></div><div class="service-card"><img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=400&q=80" alt="Tiling" class="service-img"><h3>Waterproofing</h3><p>Roof and balcony waterproofing to prevent leaks.</p></div><div class="service-card"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=400&q=80" alt="Waterproofing" class="service-img"><h3>Roof Inspections</h3><p>Comprehensive roof condition assessments.</p></div><div class="service-card"><img src="https://images.unsplash.com/photo-1773414485958-10e1a4ca9a3d?auto=format&fit=crop&w=400&q=80" alt="Our Service" class="service-img"><h3>Repairs</h3><p>Fast, reliable repairs for roofs, paving, and tiled surfaces.</p></div>
-</div>
-<div style="text-align:center;margin-top:2rem">
-<a href="services.html" class="btn btn-secondary">View All Services <i class="fas fa-arrow-right"></i></a>
-</div>
-</div>
-</section>
-
-<section style="background:var(--light)">
-<div class="container">
-<div class="section-header">
-<span class="overline">How It Works</span>
-<h2>Our Simple Process</h2>
-<p>From first contact to project completion, we make it easy and stress-free.</p>
-</div>
-<div class="process-grid">
-<div class="step"><div class="step-num">1</div><h4>Free Inspection</h4><p>We assess your roof, paving, or tiling needs.</p></div><div class="step"><div class="step-num">2</div><h4>Detailed Quote</h4><p>Fixed-price quote with no hidden costs.</p></div><div class="step"><div class="step-num">3</div><h4>Expert Work</h4><p>Our skilled team completes the work to high standards.</p></div><div class="step"><div class="step-num">4</div><h4>Quality Check</h4><p>We inspect every detail before handover.</p></div><div class="step"><div class="step-num">5</div><h4>Warranty</h4><p>All work backed by our workmanship guarantee.</p></div>
-</div>
-</div>
-</section>
-
-<section class="why-section">
-<div class="container">
-<div class="why-grid">
-<div class="why-text">
-<span class="overline">Why Choose Us</span>
-<h2>The MaTe Difference</h2>
-<p>We have built our reputation on quality, reliability, and customer satisfaction. Here is why Midrand residents and businesses choose us.</p>
-<ul>
-<li><i class="fas fa-check-circle"></i><span>20+ years combined experience</span></li><li><i class="fas fa-check-circle"></i><span>Quality materials and finishes</span></li><li><i class="fas fa-check-circle"></i><span>Fixed-price, detailed quotes</span></li><li><i class="fas fa-check-circle"></i><span>Clean, respectful crews</span></li><li><i class="fas fa-check-circle"></i><span>All work guaranteed</span></li>
-</ul>
-<div class="stats-row">
-<div class="stat-box"><strong>20+</strong><span>Years Exp</span></div>
-<div class="stat-box"><strong>500+</strong><span>Projects</span></div>
-<div class="stat-box"><strong>10-Yr</strong><span>Waterproofing</span></div>
-</div>
-</div>
-<div class="why-visual"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80" alt="Our professional team at work" class="why-img"></div>
-</div>
-</div>
-</section>
-
-<section class="testimonials-section">
-<div class="container">
-<div class="section-header">
-<span class="overline">Testimonials</span>
-<h2>What Our Customers Say</h2>
-<p>Real reviews from real Midrand residents and business owners.</p>
-</div>
-<div class="testimonial-grid">
-<div class="testimonial"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Re-tiled our entire house. Perfect alignment and beautiful finish."</p><div class="author"><strong>Mr. Peters</strong><span>Midrand</span></div></div><div class="testimonial"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"New roof installation after storm damage. Professional and handled insurance."</p><div class="author"><strong>Ms. Nkosi</strong><span>Halfway House</span></div></div><div class="testimonial"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Paved our driveway and patio. Quality work that has held up for 3 years."</p><div class="author"><strong>Mr. Botha</strong><span>Vorna Valley</span></div></div>
-</div>
-</div>
-</section>
-
-<section class="cta-section">
-<div class="container">
-<h2>Ready to Get Started?</h2>
-<p>Contact us today for a free, no-obligation quote. We are ready to help with all your roofing / paving / tiling needs across Midrand.</p>
-<div class="cta-buttons">
-<a href="contact.html" class="btn btn-primary"><i class="fas fa-envelope"></i> Request Quote</a>
-<a href="contact.html" class="btn btn-outline">Send a Message</a>
-</div>
-<p style="margin-top:1.5rem;font-size:.85rem;opacity:.7"><i class="fas fa-map-marker-alt"></i> Midrand, Gauteng &nbsp;|&nbsp; <i class="fas fa-clock"></i> Mon–Sat: 8am – 5pm</p>
-</div>
-</section>
-<footer>
-<div class="container">
-<div>
-<div class="logo" style="margin-bottom:1rem">MaTe Business Group<span></span></div>
-<p style="color:rgba(255,255,255,.5);font-size:.9rem;line-height:1.6">Professional roofing / paving / tiling services in Midrand and surrounding areas. Quality workmanship, fair pricing, and customer satisfaction guaranteed.</p>
-</div>
-<div>
-<h4>Quick Links</h4>
+<div class="header-main">
+<a href="index.html" class="logo">MaTe<span>Business</span><small>Group</small></a>
+<nav class="nav-desktop">
 <a href="index.html">Home</a>
 <a href="services.html">Services</a>
-<a href="about.html">About Us</a>
-<a href="contact.html">Contact Us</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="tel:+27737721177" class="phone-header"><i class="fas fa-phone"></i> 073 772 1177</a>
+<a href="contact.html" class="btn btn-primary">Get a Quote</a>
+</nav>
+<div class="hamburger" onclick="document.querySelector('.mobile-nav').classList.toggle('active')"><i class="fas fa-bars"></i></div>
 </div>
-<div>
-<h4>Services</h4>
-<a href="services.html">Roofing</a><a href="services.html">Paving</a><a href="services.html">Tiling</a><a href="services.html">Waterproofing</a>
 </div>
-<div>
-<h4>Contact</h4>
-<a href="tel:277377211770670710386"><i class="fas fa-phone"></i> 073 772 1177 / 067 071 0386</a>
-<a href="https://wa.me/277377211770670710386"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-<a href="mailto:admin@matebusinessgroup.co.za"><i class="fas fa-envelope"></i> admin@matebusinessgroup.co.za</a>
+<nav class="mobile-nav">
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="tel:+27737721177" class="btn btn-primary">Call Now</a>
+</nav>
+</header>
 
-
-
-<a href="contact.html"><i class="fas fa-map-marker-alt"></i> Midrand, Gauteng</a>
-</div>
-</div>
+<!-- Hero -->
+<section class="hero">
 <div class="container">
+<div class="hero-content">
+<span class="hero-tag">Licensed &amp; Insured</span>
+<h1>20+ Years. <span>500+ Projects.</span> Built to Last.</h1>
+<p class="hero-sub">Midrand's trusted construction partner for roofing, waterproofing, paving, tiling, and structural repairs. No shortcuts. No surprises. Just quality that stands the test of time.</p>
+<div class="hero-cta">
+<a href="tel:+27737721177" class="btn btn-primary"><i class="fas fa-phone"></i> Call Now</a>
+<a href="contact.html" class="btn btn-outline">Get Free Quote</a>
+</div>
+<div class="hero-trust">
+<div class="hero-trust-item"><i class="fas fa-star"></i> 5-Star Rated</div>
+<div class="hero-trust-item"><i class="fas fa-shield-alt"></i> Licensed &amp; Insured</div>
+<div class="hero-trust-item"><i class="fas fa-clock"></i> 20+ Years Experience</div>
+<div class="hero-trust-item"><i class="fas fa-hard-hat"></i> 500+ Projects</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Trust Strip -->
+<section class="trust-strip">
+<div class="container">
+<div class="trust-item">
+<div class="icon"><i class="fas fa-calendar-alt"></i></div>
+<h4>20+ Years</h4>
+<p>In the Building Industry</p>
+</div>
+<div class="trust-item">
+<div class="icon"><i class="fas fa-building"></i></div>
+<h4>500+ Projects</h4>
+<p>Successfully Completed</p>
+</div>
+<div class="trust-item">
+<div class="icon"><i class="fas fa-certificate"></i></div>
+<h4>Licensed &amp; Insured</h4>
+<p>Full Compliance &amp; Safety</p>
+</div>
+<div class="trust-item">
+<div class="icon"><i class="fas fa-star"></i></div>
+<h4>5-Star Rated</h4>
+<p>By Satisfied Clients</p>
+</div>
+</div>
+</section>
+
+<!-- Services -->
+<section class="services" id="services">
+<div class="container">
+<div class="section-title">
+<div class="red-line"></div>
+<h2>Our Services</h2>
+<p>From the roof to the foundation, we handle every aspect of your construction and renovation needs with precision and care.</p>
+</div>
+<div class="services-grid">
+<div class="service-card">
+<img src="https://images.unsplash.com/photo-1605152276897-4f618f831968?w=800&q=80" alt="Professional roofing installation in Midrand">
+<div class="content">
+<h3>Roofing</h3>
+<p>New roof installations, re-roofing, tile repairs, and leak detection. We work with concrete tiles, metal sheeting, and IBR roofing systems.</p>
+<a href="services.html">Learn More <i class="fas fa-arrow-right"></i></a>
+</div>
+</div>
+<div class="service-card">
+<img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80" alt="Waterproofing construction project">
+<div class="content">
+<h3>Waterproofing</h3>
+<p>Comprehensive waterproofing solutions for roofs, basements, balconies, and wet areas. We use premium membranes and sealants.</p>
+<a href="services.html">Learn More <i class="fas fa-arrow-right"></i></a>
+</div>
+</div>
+<div class="service-card">
+<img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?w=800&q=80" alt="Professional paving and hardscaping">
+<div class="content">
+<h3>Paving &amp; More</h3>
+<p>Expert paving, tiling, ceiling installation, painting, and structural repairs. One team, every trade, complete peace of mind.</p>
+<a href="services.html">View All Services <i class="fas fa-arrow-right"></i></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="why">
+<div class="container">
+<div class="section-title">
+<div class="red-line"></div>
+<h2>Why Choose MaTe Business Group</h2>
+<p>We don't just build structures — we build trust, one project at a time.</p>
+</div>
+<div class="why-grid">
+<div class="why-item">
+<div class="icon"><i class="fas fa-hard-hat"></i></div>
+<h3>Experienced Crew</h3>
+<p>Our skilled tradesmen bring over two decades of hands-on experience across every major construction discipline.</p>
+</div>
+<div class="why-item">
+<div class="icon"><i class="fas fa-gem"></i></div>
+<h3>Quality Materials</h3>
+<p>We source only SABS-approved materials from reputable suppliers, ensuring your build lasts for decades.</p>
+</div>
+<div class="why-item">
+<div class="icon"><i class="fas fa-hand-holding-usd"></i></div>
+<h3>Transparent Pricing</h3>
+<p>Detailed, itemised quotes with no hidden costs. You know exactly what you're paying for before we start.</p>
+</div>
+<div class="why-item">
+<div class="icon"><i class="fas fa-clock"></i></div>
+<h3>On-Time Delivery</h3>
+<p>We respect your schedule. Our projects start and finish on the agreed dates, with regular progress updates.</p>
+</div>
+<div class="why-item">
+<div class="icon"><i class="fas fa-shield-alt"></i></div>
+<h3>Full Insurance</h3>
+<p>Comprehensive public liability and workers' compensation cover for complete peace of mind on every site.</p>
+</div>
+<div class="why-item">
+<div class="icon"><i class="fas fa-thumbs-up"></i></div>
+<h3>Satisfaction Guarantee</h3>
+<p>Every project comes with a 5-year workmanship guarantee. We don't leave until you're 100% satisfied.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Gallery -->
+<section class="gallery">
+<div class="container">
+<div class="section-title">
+<div class="red-line"></div>
+<h2>Our Work</h2>
+<p>A glimpse of the projects we've delivered across Midrand and surrounding areas.</p>
+</div>
+<div class="gallery-grid">
+<div class="gallery-item">
+<img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&q=80" alt="Completed roof installation project">
+<div class="gallery-overlay"><span>Roofing</span></div>
+</div>
+<div class="gallery-item">
+<img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?w=600&q=80" alt="Paving and driveway project">
+<div class="gallery-overlay"><span>Paving</span></div>
+</div>
+<div class="gallery-item">
+<img src="https://images.unsplash.com/photo-1588854337236-6889d631faa3?w=600&q=80" alt="Tiling work">
+<div class="gallery-overlay"><span>Tiling</span></div>
+</div>
+<div class="gallery-item">
+<img src="https://images.unsplash.com/photo-1565538810643-b5bdb7140320?w=600&q=80" alt="Ceiling installation">
+<div class="gallery-overlay"><span>Ceilings</span></div>
+</div>
+<div class="gallery-item">
+<img src="https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?w=600&q=80" alt="Painting project">
+<div class="gallery-overlay"><span>Painting</span></div>
+</div>
+<div class="gallery-item">
+<img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80" alt="Structural repair work">
+<div class="gallery-overlay"><span>Repairs</span></div>
+</div>
+<div class="gallery-item">
+<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" alt="Construction team at work">
+<div class="gallery-overlay"><span>Team</span></div>
+</div>
+<div class="gallery-item">
+<img src="https://images.unsplash.com/photo-1449844908441-8829872d2607?w=600&q=80" alt="Completed residential project">
+<div class="gallery-overlay"><span>Residential</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials">
+<div class="container">
+<div class="section-title">
+<div class="red-line"></div>
+<h2>What Our Clients Say</h2>
+<p>Real feedback from real clients across Midrand and Gauteng.</p>
+</div>
+<div class="testimonials-grid">
+<div class="testimonial-card">
+<div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+<p>"MaTe Business Group replaced our entire roof after storm damage. The crew was professional, punctual, and the workmanship was outstanding. I would recommend them to anyone in Midrand."</p>
+<div class="author">Thabo Mokoena<span>Homeowner, Vorna Valley</span></div>
+</div>
+<div class="testimonial-card">
+<div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+<p>"We hired them for waterproofing our office block and paving the parking area. Both jobs were completed on time and on budget. The team was respectful and cleaned up every day."</p>
+<div class="author">Sarah van der Merwe<span>Property Manager, Kyalami</span></div>
+</div>
+<div class="testimonial-card">
+<div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+<p>"From tiling our bathrooms to painting the exterior, MaTe handled everything. They were transparent about costs and kept us informed throughout. Five stars is not enough."</p>
+<div class="author">James Ndlovu<span>Homeowner, Carlswald</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Short Form -->
+<section class="short-form">
+<div class="container">
+<div class="section-title">
+<div class="red-line"></div>
+<h2>Get Your Free Quote</h2>
+<p>Tell us about your project and we'll get back to you within 24 hours.</p>
+</div>
+<form name="quote" method="POST" data-netlify="true" action="/thank-you.html">
+<div><label>Your Name</label><input type="text" name="name" placeholder="Full Name" required></div>
+<div><label>Phone Number</label><input type="tel" name="phone" placeholder="Phone Number" required></div>
+<div><label>Service Needed</label><select name="service" required><option value="">Select a Service</option><option>Roofing</option><option>Waterproofing</option><option>Paving</option><option>Tiling</option><option>Ceiling Installation</option><option>Painting</option><option>Structural Repairs</option><option>Inspections</option><option>Other</option></select></div>
+<div><label>Email (Optional)</label><input type="email" name="email" placeholder="Email Address"></div>
+<div><label>Project Details</label><textarea name="message" placeholder="Tell us about your project..."></textarea></div>
+<button type="submit" class="btn btn-primary">Request Free Quote</button>
+</form>
+</div>
+</section>
+
+<!-- Guarantee Banner -->
+<section class="guarantee">
+<div class="container">
+<h3>5-Year Workmanship Guarantee</h3>
+<p>We stand behind every nail, tile, and coat of paint. If anything isn't right, we'll fix it — no questions asked, no extra cost.</p>
+<a href="tel:+27737721177" class="btn btn-light"><i class="fas fa-phone"></i> Call 073 772 1177</a>
+</div>
+</section>
+
+<!-- Footer -->
+<footer>
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<a href="index.html" class="logo">MaTe<span>Business</span><small>Group</small></a>
+<p>Midrand's trusted construction partner for over 20 years. We deliver roofing, waterproofing, paving, tiling, and structural solutions with integrity, quality, and pride.</p>
+<div class="footer-social">
+<a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+<a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+<a href="https://wa.me/277377211770670710386" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+</div>
+</div>
+<div class="footer-col">
+<h4>Services</h4>
+<a href="services.html">Roofing</a>
+<a href="services.html">Waterproofing</a>
+<a href="services.html">Paving</a>
+<a href="services.html">Tiling</a>
+<a href="services.html">Painting</a>
+<a href="services.html">Structural Repairs</a>
+</div>
+<div class="footer-col">
+<h4>Company</h4>
+<a href="about.html">About Us</a>
+<a href="about.html">Our Values</a>
+<a href="services.html">Our Services</a>
+<a href="contact.html">Contact</a>
+</div>
+<div class="footer-col">
+<h4>Contact</h4>
+<p><i class="fas fa-phone"></i> <a href="tel:+27737721177">073 772 1177</a></p>
+<p><i class="fas fa-phone"></i> <a href="tel:+27670710386">067 071 0386</a></p>
+<p><i class="fas fa-envelope"></i> <a href="mailto:admin@matebusinessgroup.co.za">admin@matebusinessgroup.co.za</a></p>
+<p><i class="fas fa-map-marker-alt"></i> Midrand, Gauteng, South Africa</p>
+<p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/277377211770670710386">WhatsApp Us</a></p>
+</div>
+</div>
 <div class="footer-bottom">
-<div>© <span id="yr"></span> MaTe Business Group. All rights reserved.</div>
-<div>Serving Midrand, Kyalami, Vorna Valley, Halfway House, Blue Hills & surrounding areas.</div>
+<p>© 2025 MaTe Business Group. All rights reserved. | Licensed &amp; Insured Construction Specialists.</p>
 </div>
 </div>
 </footer>
-<script>
-document.getElementById('yr').textContent=new Date().getFullYear();
-document.querySelectorAll('.faq-item').forEach(item=>item.addEventListener('click',()=>item.classList.toggle('active')));
-</script>
+
+<!-- Sticky Mobile Bar -->
+<div class="sticky-phone">
+<a href="tel:+27737721177"><i class="fas fa-phone"></i> Call 073 772 1177</a>
+<a href="https://wa.me/277377211770670710386"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+</div>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/277377211770670710386" class="whatsapp-float" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
 </body>
 </html>

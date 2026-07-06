@@ -1,473 +1,669 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services | Werhu Works Mobile Mechanic Midrand</title>
-    <meta name="description" content="Full range of mobile car services in Midrand: oil changes, servicing, clutch & brake replacement, diagnostics, cooling, aircon, timing chain, and cambelt. We come to you.">
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Services | Werhu Works Mobile Mechanic Midrand</title>
+<meta name="description" content="Full range of mobile car services in Midrand: oil changes, servicing, clutch & brake replacement, diagnostics, cooling, aircon, timing chain, and cambelt. We come to you.">
+<meta property="og:title" content="Our Services | Werhu Works Mobile Mechanic Midrand">
+<meta property="og:description" content="Full range of mobile car services in Midrand. We come to you.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1621905252507-b35f3d91e20f?w=1200&q=80">
+<meta property="og:type" content="website">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+<style>
+
+:root{--primary:#E8A838;--primary-dark:#C48A2A;--black:#111111;--dark:#1C1C1C;--gray:#666666;--light-gray:#F8F8F8;--white:#FFFFFF;--border:#E5E5E5;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:#1a1a1a;line-height:1.6;background:#fff}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+.header{position:sticky;top:0;z-index:1000;background:var(--black);border-bottom:1px solid rgba(255,255,255,0.06)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{font-family:'Bebas Neue',sans-serif;font-size:32px;color:var(--white);letter-spacing:1px}
+.logo span{color:var(--primary)}
+.nav{display:flex;gap:32px;align-items:center}
+.nav a{color:rgba(255,255,255,0.75);font-size:14px;font-weight:600;transition:color 0.2s;text-transform:uppercase;letter-spacing:0.5px}
+.nav a:hover{color:var(--primary)}
+.nav a.active{color:var(--primary)}
+.mobile-phone{display:none;color:var(--primary);font-weight:800;font-size:14px}
+.cta-btn{background:var(--primary);color:var(--black);padding:10px 22px;border-radius:6px;font-weight:700;font-size:13px;transition:all 0.2s;border:none;cursor:pointer;text-transform:uppercase;letter-spacing:0.5px}
+.cta-btn:hover{background:var(--primary-dark);transform:translateY(-1px)}
+.menu-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px}
+.menu-toggle span{display:block;width:24px;height:2px;background:var(--white);border-radius:1px}
+.hero{position:relative;min-height:92vh;display:flex;align-items:center;background:var(--black);overflow:hidden}
+.hero-bg{position:absolute;inset:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;opacity:0.35}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(17,17,17,0.97) 0%,rgba(17,17,17,0.7) 55%,rgba(17,17,17,0.3) 100%)}
+.hero-content{position:relative;z-index:2;max-width:660px;padding:100px 0}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(232,168,56,0.12);color:var(--primary);padding:8px 16px;border-radius:100px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:24px;border:1px solid rgba(232,168,56,0.25)}
+.hero-tag .pulse{width:8px;height:8px;background:var(--primary);border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
+.hero h1{font-family:'Bebas Neue',sans-serif;font-size:80px;line-height:0.95;color:var(--white);margin-bottom:20px;letter-spacing:1px}
+.hero h1 span{color:var(--primary)}
+.hero-subtitle{font-size:18px;color:rgba(255,255,255,0.72);margin-bottom:36px;line-height:1.65;max-width:520px}
+.hero-ctas{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:56px}
+.btn-primary{display:inline-flex;align-items:center;gap:10px;background:var(--primary);color:var(--black);padding:16px 32px;border-radius:8px;font-weight:800;font-size:15px;transition:all 0.2s;border:none;cursor:pointer}
+.btn-primary:hover{background:var(--primary-dark);transform:translateY(-2px);box-shadow:0 8px 24px rgba(232,168,56,0.3)}
+.btn-secondary{display:inline-flex;align-items:center;gap:10px;background:transparent;color:var(--white);padding:16px 32px;border-radius:8px;font-weight:700;font-size:15px;border:1px solid rgba(255,255,255,0.25);transition:all 0.2s}
+.btn-secondary:hover{background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.5)}
+.trust-bar{background:var(--dark);border-top:1px solid rgba(255,255,255,0.05);padding:48px 0}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
+.trust-item{border-right:1px solid rgba(255,255,255,0.06);padding:0 16px}
+.trust-item:last-child{border-right:none}
+.trust-number{font-family:'Bebas Neue',sans-serif;font-size:44px;color:var(--primary);line-height:1;display:block}
+.trust-label{font-size:13px;color:rgba(255,255,255,0.55);margin-top:6px;display:block;font-weight:500}
+.section{padding:100px 0}
+.section-light{background:var(--light-gray)}
+.section-header{text-align:center;max-width:640px;margin:0 auto 64px}
+.section-tag{display:inline-block;color:var(--primary);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:2px;margin-bottom:12px}
+.section-header h2{font-family:'Bebas Neue',sans-serif;font-size:52px;line-height:1.05;margin-bottom:16px;color:var(--black)}
+.section-header p{color:var(--gray);font-size:17px;line-height:1.6}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.service-card{background:var(--white);border-radius:14px;overflow:hidden;border:1px solid var(--border);transition:all 0.35s}
+.service-card:hover{transform:translateY(-6px);box-shadow:0 24px 48px rgba(0,0,0,0.08)}
+.service-card img{width:100%;height:240px;object-fit:cover}
+.service-card-content{padding:28px}
+.service-card h3{font-size:18px;font-weight:800;margin-bottom:10px;color:var(--black)}
+.service-card p{font-size:14px;color:var(--gray);margin-bottom:18px;line-height:1.6}
+.service-card a{color:var(--primary);font-weight:700;font-size:14px;display:inline-flex;align-items:center;gap:6px;transition:gap 0.2s}
+.service-card a:hover{gap:10px}
+.features-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:40px}
+.feature-item{text-align:center}
+.feature-icon{width:72px;height:72px;background:rgba(232,168,56,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 24px;color:var(--primary);font-size:26px}
+.feature-item h3{font-size:17px;font-weight:800;margin-bottom:10px;color:var(--black)}
+.feature-item p{font-size:14px;color:var(--gray);line-height:1.6}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.gallery-item{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:4/3}
+.gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform 0.6s}
+.gallery-item:hover img{transform:scale(1.08)}
+.gallery-overlay{position:absolute;inset:0;background:linear-gradient(transparent 35%,rgba(0,0,0,0.85));display:flex;align-items:flex-end;padding:28px}
+.gallery-overlay h4{color:var(--white);font-size:16px;font-weight:700}
+.gallery-overlay span{color:var(--primary);font-size:13px;font-weight:600}
+.testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.testimonial-card{background:var(--white);padding:36px;border-radius:14px;border:1px solid var(--border);position:relative}
+.testimonial-card::before{content:'"';font-family:Georgia,serif;font-size:64px;color:var(--primary);opacity:0.2;line-height:1;position:absolute;top:16px;left:24px}
+.testimonial-stars{color:var(--primary);font-size:14px;margin-bottom:20px;letter-spacing:2px;position:relative}
+.testimonial-card p{font-size:15px;color:var(--gray);margin-bottom:24px;line-height:1.65;position:relative;font-style:italic}
+.testimonial-author{font-weight:800;font-size:14px;color:var(--black);position:relative}
+.testimonial-author span{display:block;font-weight:500;color:var(--gray);font-size:13px;margin-top:2px}
+.cta-section{padding:80px 0}
+.cta-box{background:var(--black);border-radius:20px;padding:80px 48px;text-align:center;position:relative;overflow:hidden}
+.cta-box::before{content:'';position:absolute;top:-40%;left:-20%;width:140%;height:140%;background:radial-gradient(circle,rgba(232,168,56,0.12) 0%,transparent 65%)}
+.cta-box h2{font-family:'Bebas Neue',sans-serif;font-size:56px;color:var(--white);position:relative;margin-bottom:16px;line-height:1}
+.cta-box p{color:rgba(255,255,255,0.65);font-size:18px;position:relative;max-width:520px;margin:0 auto 32px;line-height:1.6}
+.cta-buttons{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;position:relative}
+.footer{background:var(--black);color:rgba(255,255,255,0.55);padding:80px 0 32px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:48px;margin-bottom:64px}
+.footer-brand h3{font-family:'Bebas Neue',sans-serif;font-size:32px;color:var(--white);margin-bottom:16px;letter-spacing:1px}
+.footer-brand h3 span{color:var(--primary)}
+.footer-brand p{font-size:14px;line-height:1.7;margin-bottom:24px;color:rgba(255,255,255,0.55)}
+.footer-social{display:flex;gap:14px}
+.footer-social a{width:44px;height:44px;background:rgba(255,255,255,0.07);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--white);transition:all 0.25s;font-size:16px}
+.footer-social a:hover{background:var(--primary);color:var(--black);transform:translateY(-2px)}
+.footer-links h4{color:var(--white);font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:20px}
+.footer-links ul{list-style:none}
+.footer-links li{margin-bottom:12px}
+.footer-links a{font-size:14px;color:rgba(255,255,255,0.55);transition:color 0.2s}
+.footer-links a:hover{color:var(--primary)}
+.footer-contact h4{color:var(--white);font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:20px}
+.footer-contact ul{list-style:none}
+.footer-contact li{display:flex;align-items:flex-start;gap:12px;margin-bottom:16px;font-size:14px;color:rgba(255,255,255,0.55)}
+.footer-contact a{color:rgba(255,255,255,0.55);transition:color 0.2s}
+.footer-contact a:hover{color:var(--primary)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.06);padding-top:32px;text-align:center;font-size:13px;color:rgba(255,255,255,0.35)}
+.whatsapp-float{position:fixed;bottom:24px;right:24px;width:60px;height:60px;background:#25D366;color:var(--white);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 24px rgba(37,211,102,0.4);z-index:999;transition:all 0.25s;font-size:28px}
+.whatsapp-float:hover{transform:scale(1.1) rotate(-5deg);box-shadow:0 6px 32px rgba(37,211,102,0.5)}
+@media(max-width:768px){
+.menu-toggle{display:flex}
+.nav{display:none;position:absolute;top:72px;left:0;right:0;background:var(--black);flex-direction:column;padding:28px 24px;gap:18px;border-top:1px solid rgba(255,255,255,0.08);align-items:flex-start}
+.nav.active{display:flex}
+.nav a{font-size:15px}
+.mobile-phone{display:block;margin-right:auto;padding-left:16px}
+.hero h1{font-size:52px}
+.hero{min-height:85vh}
+.hero-content{padding:60px 0 80px}
+.trust-grid{grid-template-columns:repeat(2,1fr);gap:28px}
+.trust-item{border-right:none;border-bottom:1px solid rgba(255,255,255,0.06);padding-bottom:20px}
+.trust-item:nth-child(3),.trust-item:nth-child(4){border-bottom:none;padding-bottom:0}
+.services-grid,.features-grid,.gallery-grid,.testimonials-grid{grid-template-columns:1fr}
+.footer-grid{grid-template-columns:1fr;gap:40px}
+.cta-box{padding:48px 28px}
+.cta-box h2{font-size:40px}
+.section-header h2{font-size:40px}
+.section{padding:64px 0}
+.features-grid{gap:32px}
+.gallery-grid{gap:14px}
+}
+@media(max-width:480px){
+.hero h1{font-size:44px}
+.trust-grid{grid-template-columns:1fr}
+.trust-item{border-bottom:1px solid rgba(255,255,255,0.06);padding-bottom:20px}
+.trust-item:last-child{border-bottom:none;padding-bottom:0}
+.hero-ctas{flex-direction:column}
+.btn-primary,.btn-secondary{width:100%;justify-content:center}
+.cta-buttons{flex-direction:column}
+.cta-buttons .btn-primary,.cta-buttons .btn-secondary{width:100%;justify-content:center}
+}
+.page-header{background:var(--black);padding:140px 0 80px;text-align:center}
+.page-header h1{font-family:'Bebas Neue',sans-serif;font-size:64px;color:var(--white);line-height:1;margin-bottom:16px}
+.page-header p{color:rgba(255,255,255,0.65);font-size:18px;max-width:600px;margin:0 auto;line-height:1.6}
+.page-header .section-tag{color:var(--primary)}
+.service-detail{padding:80px 0}
+.service-detail.alt{background:var(--light-gray)}
+.service-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.service-detail-grid.reverse{direction:rtl}
+.service-detail-grid.reverse > *{direction:ltr}
+.service-detail-image{border-radius:16px;overflow:hidden}
+.service-detail-image img{width:100%;height:400px;object-fit:cover}
+.service-detail-tag{display:inline-block;background:var(--primary);color:var(--black);padding:6px 14px;border-radius:6px;font-size:12px;font-weight:800;text-transform:uppercase;margin-bottom:16px}
+.service-detail-content h2{font-family:'Bebas Neue',sans-serif;font-size:44px;color:var(--black);margin-bottom:20px;line-height:1.1}
+.service-detail-content p{font-size:15px;color:var(--gray);line-height:1.7;margin-bottom:24px}
+.service-detail-content h4{font-size:14px;font-weight:800;text-transform:uppercase;letter-spacing:1px;margin-bottom:14px;color:var(--black)}
+.service-detail-list{list-style:none;margin-bottom:24px}
+.service-detail-list li{position:relative;padding-left:28px;margin-bottom:10px;font-size:14px;color:var(--gray)}
+.service-detail-list li::before{content:'\2713';position:absolute;left:0;color:var(--primary);font-weight:700}
+.service-detail-meta{display:flex;gap:32px;margin-bottom:28px}
+.meta-item{display:flex;flex-direction:column}
+.meta-label{font-size:12px;color:var(--gray);text-transform:uppercase;letter-spacing:1px;font-weight:600}
+.meta-value{font-size:18px;font-weight:800;color:var(--black)}
+.notice-box{display:flex;gap:12px;background:rgba(232,168,56,0.08);border:1px solid rgba(232,168,56,0.2);padding:16px;border-radius:10px;margin-bottom:24px;font-size:14px;color:var(--gray)}
+.notice-box i{color:var(--primary);font-size:18px;flex-shrink:0}
+.process-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;counter-reset:step}
+.process-step{text-align:center;position:relative}
+.process-step::before{counter-increment:step;content:counter(step);display:flex;align-items:center;justify-content:center;width:56px;height:56px;background:var(--primary);color:var(--black);font-family:'Bebas Neue',sans-serif;font-size:28px;border-radius:50%;margin:0 auto 20px}
+.process-step h3{font-size:17px;font-weight:800;margin-bottom:10px}
+.process-step p{font-size:14px;color:var(--gray);line-height:1.6}
+.faq-item{border-bottom:1px solid var(--border);padding:24px 0}
+.faq-question{display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-size:17px;font-weight:700;color:var(--black);gap:16px}
+.faq-question i{color:var(--primary);font-size:14px;transition:transform 0.3s}
+.faq-answer{max-height:0;overflow:hidden;transition:max-height 0.3s ease}
+.faq-answer-inner{padding-top:14px;font-size:15px;color:var(--gray);line-height:1.7}
+.faq-item.active .faq-answer{max-height:300px}
+.faq-item.active .faq-question i{transform:rotate(180deg)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.about-image{position:relative;border-radius:16px;overflow:hidden}
+.about-image img{width:100%;height:480px;object-fit:cover}
+.about-badge{position:absolute;bottom:24px;left:24px;background:var(--primary);color:var(--black);padding:16px 24px;border-radius:12px;text-align:center}
+.about-badge-number{font-family:'Bebas Neue',sans-serif;font-size:36px;line-height:1;display:block}
+.about-badge-text{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;display:block}
+.about-content h2{font-family:'Bebas Neue',sans-serif;font-size:44px;color:var(--black);margin-bottom:20px;line-height:1.1}
+.about-content p{font-size:15px;color:var(--gray);line-height:1.7;margin-bottom:20px}
+.about-mission{margin:32px 0;padding:24px;border-left:4px solid var(--primary);background:var(--light-gray);border-radius:0 12px 12px 0}
+.about-mission h3{color:var(--primary);font-size:14px;font-weight:800;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
+.about-mission p{font-size:14px;color:var(--gray);margin:0}
+.about-list{list-style:none}
+.about-list li{display:flex;align-items:center;gap:12px;margin-bottom:14px;font-size:15px;font-weight:600;color:var(--black)}
+.about-list li i{color:var(--primary);font-size:18px}
+.team-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px}
+.team-card{background:var(--white);border-radius:14px;overflow:hidden;border:1px solid var(--border)}
+.team-card img{width:100%;height:280px;object-fit:cover}
+.team-card-body{padding:28px}
+.team-card h3{font-size:18px;font-weight:800;margin-bottom:4px}
+.team-card span{color:var(--primary);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1px}
+.team-card p{font-size:14px;color:var(--gray);margin-top:12px;line-height:1.6}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.contact-info h2{font-family:'Bebas Neue',sans-serif;font-size:44px;color:var(--black);margin-bottom:16px;line-height:1.1}
+.contact-info > p{font-size:15px;color:var(--gray);line-height:1.7;margin-bottom:32px}
+.contact-card{display:flex;gap:20px;align-items:flex-start;padding:24px;background:var(--white);border-radius:12px;border:1px solid var(--border);margin-bottom:16px;transition:all 0.2s}
+.contact-card:hover{border-color:var(--primary);transform:translateX(4px)}
+.contact-card i{color:var(--primary);font-size:22px;margin-top:2px}
+.contact-card h4{font-size:15px;font-weight:800;margin-bottom:4px;color:var(--black)}
+.contact-card p,.contact-card a{font-size:14px;color:var(--gray);line-height:1.5}
+.contact-card a:hover{color:var(--primary)}
+.contact-form-wrap{background:var(--white);padding:40px;border-radius:16px;border:1px solid var(--border)}
+.contact-form-wrap h3{font-family:'Bebas Neue',sans-serif;font-size:32px;color:var(--black);margin-bottom:24px}
+.form-row{margin-bottom:18px}
+.form-row input,.form-row select,.form-row textarea{width:100%;padding:14px 16px;border:1px solid var(--border);border-radius:8px;font-family:inherit;font-size:14px;transition:all 0.2s;background:#fff}
+.form-row input:focus,.form-row select:focus,.form-row textarea:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(232,168,56,0.1)}
+.form-row textarea{resize:vertical;min-height:120px}
+.form-checkbox{display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--gray)}
+.form-checkbox input{width:auto;margin-top:3px}
+.hours-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:16px;text-align:center}
+.hours-item{padding:20px;background:var(--white);border-radius:10px;border:1px solid var(--border)}
+.hours-day{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--primary);display:block;margin-bottom:6px}
+.hours-time{font-size:14px;color:var(--gray);font-weight:600}
+@media(max-width:768px){
+.service-detail-grid,.about-grid,.contact-grid{grid-template-columns:1fr;gap:40px}
+.service-detail-grid.reverse{direction:ltr}
+.process-steps{grid-template-columns:repeat(2,1fr);gap:28px}
+.team-grid{grid-template-columns:1fr}
+.hours-grid{grid-template-columns:repeat(3,1fr)}
+.page-header h1{font-size:48px}
+.page-header{padding:100px 0 60px}
+.contact-form-wrap{padding:28px}
+}
+@media(max-width:480px){
+.process-steps{grid-template-columns:1fr}
+.hours-grid{grid-template-columns:1fr}
+.service-detail-image img{height:260px}
+.about-image img{height:340px}
+}
+
+</style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <img src="images/logo.png" alt="Werhu Works">
-            </a>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html" class="active">Our Services</a></li>
-                <li><a href="work.html">Our Work</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="book.html" class="nav-cta">Book a Service</a></li>
-            </ul>
-        </div>
+
+<header class="header" id="header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">WERHU <span>WORKS</span></a>
+    <a href="tel:0789078438" class="mobile-phone"><i class="fas fa-phone" style="margin-right:6px"></i>078 907 8438</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <nav class="nav" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="tel:0789078438" class="cta-btn"><i class="fas fa-phone"></i> 078 907 8438</a>
     </nav>
+  </div>
+</header>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <span class="section-tag">What We Offer</span>
-            <h1>Mobile Car Services in Midrand</h1>
-            <p>At Werhu Works we offer car services that fit your needs. We can do regular check-ups or fix bigger problems with your car. And with our house call car mechanic service, we come to your home to help you out.</p>
+<section class="page-header">
+  <div class="container">
+    <span class="section-tag">What We Offer</span>
+    <h1>Mobile Car Services in Midrand</h1>
+    <p>At Werhu Works we offer car services that fit your needs. We do regular check-ups and fix bigger problems. With our house-call mechanic service, we come to your home or office to help you out.</p>
+  </div>
+</section>
+
+<section class="service-detail" id="oil-change">
+  <div class="container">
+    <div class="service-detail-grid">
+      <div class="service-detail-image">
+        <img src="https://images.unsplash.com/photo-1621905252507-b35f3d91e20f?w=800&q=80" alt="Oil change service on car engine">
+      </div>
+      <div class="service-detail-content">
+        <span class="service-detail-tag">Most Popular</span>
+        <h2>Oil Change Service</h2>
+        <p>Keeping your engine running smoothly starts with clean oil. Our team drains old oil, replaces the filter with a quality part, and fills your engine with the correct grade synthetic or mineral oil. We also check and top up all other fluids and reset your service indicator.</p>
+        <h4>What is Included:</h4>
+        <ul class="service-detail-list">
+          <li>Drain and dispose of old engine oil</li>
+          <li>Replace oil filter with quality part</li>
+          <li>Fill with correct grade synthetic or mineral oil</li>
+          <li>Check and top up other fluids (coolant, brake, power steering)</li>
+          <li>Reset service indicator where applicable</li>
+          <li>Visual inspection of belts, hoses, and leaks</li>
+        </ul>
+        <div class="service-detail-meta">
+          <div class="meta-item"><span class="meta-label">Time</span><span class="meta-value">30–45 min</span></div>
+          <div class="meta-item"><span class="meta-label">Warranty</span><span class="meta-value">30 days</span></div>
         </div>
-    </section>
+        <a href="contact.html" class="btn-primary">Book Oil Change</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Service Detail: Oil Change -->
-    <section class="service-detail" id="oil-change">
-        <div class="container">
-            <div class="service-detail-grid">
-                <div class="service-detail-image">
-                    <img src="images/mechanic-2.jpg" alt="Oil change service">
-                </div>
-                <div class="service-detail-content">
-                    <span class="service-detail-tag">Most Popular</span>
-                    <h2>Oil Change Service</h2>
-                    <p>If you need an Oil Change Service for your vehicle, you're in the right place! Keeping your car's engine running smoothly is really important. Our team of experts can quickly and easily change your oil using good quality products at fair prices. We check everything carefully and make sure to do the job right. Book your oil change today to keep your engine happy and healthy!</p>
-                    <h4>What's Included:</h4>
-                    <ul class="service-detail-list">
-                        <li>Drain and dispose of old engine oil</li>
-                        <li>Replace oil filter with quality part</li>
-                        <li>Fill with correct grade synthetic or mineral oil</li>
-                        <li>Check and top up other fluids (coolant, brake, power steering)</li>
-                        <li>Reset service indicator where applicable</li>
-                        <li>Visual inspection of belts, hoses, and leaks</li>
-                    </ul>
-                    <div class="service-detail-meta">
-                        <div class="meta-item">
-                            <span class="meta-label">Time</span>
-                            <span class="meta-value">30–45 min</span>
-                        </div>
-                        <div class="meta-item">
-                            <span class="meta-label">Warranty</span>
-                            <span class="meta-value">30 days</span>
-                        </div>
-                    </div>
-                    <a href="book.html" class="btn btn-primary">Book Oil Change</a>
-                </div>
-            </div>
+<section class="service-detail alt" id="servicing">
+  <div class="container">
+    <div class="service-detail-grid reverse">
+      <div class="service-detail-image">
+        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80" alt="Car major service inspection">
+      </div>
+      <div class="service-detail-content">
+        <h2>Minor & Major Service</h2>
+        <p>Our mechanics check everything carefully, change oil when needed, and use professional diagnostic tools to find issues early. We only use real car parts and we always tell you how much it will cost before we start.</p>
+        <h4>Minor Service Includes:</h4>
+        <ul class="service-detail-list">
+          <li>Oil and filter change</li>
+          <li>Air filter check / replacement</li>
+          <li>Brake inspection</li>
+          <li>Tyre pressure and tread check</li>
+          <li>Full fluid level check</li>
+          <li>Diagnostic scan for fault codes</li>
+        </ul>
+        <h4>Major Service Adds:</h4>
+        <ul class="service-detail-list">
+          <li>Spark plug replacement</li>
+          <li>Fuel filter replacement</li>
+          <li>Cabin / pollen filter replacement</li>
+          <li>Brake fluid replacement</li>
+          <li>Coolant replacement</li>
+          <li>Timing belt inspection (where applicable)</li>
+        </ul>
+        <div class="service-detail-meta">
+          <div class="meta-item"><span class="meta-label">Minor Time</span><span class="meta-value">1–1.5 hrs</span></div>
+          <div class="meta-item"><span class="meta-label">Major Time</span><span class="meta-value">2–4 hrs</span></div>
         </div>
-    </section>
+        <a href="contact.html" class="btn-primary">Book a Service</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Service Detail: Minor & Major Service -->
-    <section class="service-detail alt" id="servicing">
-        <div class="container">
-            <div class="service-detail-grid reverse">
-                <div class="service-detail-image">
-                    <img src="images/mechanic-5.jpg" alt="Major car service">
-                </div>
-                <div class="service-detail-content">
-                    <h2>Minor & Major Service</h2>
-                    <p>Our car service shop is really good at fixing both small and big problems in cars. We specialize in Minor & Major Service. Our mechanics check everything carefully, change oil when needed, and use special tools to find issues. We only use real car parts and we always tell you how much it will cost before we start. We want you to be happy with our work, so we try our best to make sure your car runs well. If you need help with your car, just give us a call!</p>
-                    <h4>Minor Service Includes:</h4>
-                    <ul class="service-detail-list">
-                        <li>Oil and filter change</li>
-                        <li>Air filter check / replacement</li>
-                        <li>Brake inspection</li>
-                        <li>Tyre pressure and tread check</li>
-                        <li>Full fluid level check</li>
-                        <li>Diagnostic scan for fault codes</li>
-                    </ul>
-                    <h4>Major Service Adds:</h4>
-                    <ul class="service-detail-list">
-                        <li>Spark plug replacement</li>
-                        <li>Fuel filter replacement</li>
-                        <li>Cabin / pollen filter replacement</li>
-                        <li>Brake fluid replacement</li>
-                        <li>Coolant replacement</li>
-                        <li>Timing belt inspection (where applicable)</li>
-                    </ul>
-                    <div class="service-detail-meta">
-                        <div class="meta-item">
-                            <span class="meta-label">Minor Time</span>
-                            <span class="meta-value">1–1.5 hrs</span>
-                        </div>
-                        <div class="meta-item">
-                            <span class="meta-label">Major Time</span>
-                            <span class="meta-value">2–4 hrs</span>
-                        </div>
-                    </div>
-                    <a href="book.html" class="btn btn-primary">Book a Service</a>
-                </div>
-            </div>
+<section class="service-detail" id="clutch">
+  <div class="container">
+    <div class="service-detail-grid">
+      <div class="service-detail-image">
+        <img src="https://images.unsplash.com/photo-1486262712438-b1c9a22ee3d0?w=800&q=80" alt="Clutch replacement mechanic">
+      </div>
+      <div class="service-detail-content">
+        <h2>Clutch Replacement</h2>
+        <p>Experiencing clutch issues? Our team offers expert clutch replacement for all vehicle types. With skilled mechanics, top-quality parts, fast service, and fair prices, we will have you back on the road smoothly.</p>
+        <h4>What is Included:</h4>
+        <ul class="service-detail-list">
+          <li>Full clutch kit replacement (OEM or quality aftermarket)</li>
+          <li>Flywheel inspection and skim (if needed)</li>
+          <li>Clutch cable or hydraulic system check</li>
+          <li>Gearbox oil top-up</li>
+          <li>Road test and adjustment</li>
+        </ul>
+        <div class="notice-box"><i class="fas fa-info-circle"></i><span>Most clutch replacements require 3–5 hours. We recommend booking a morning slot.</span></div>
+        <div class="service-detail-meta">
+          <div class="meta-item"><span class="meta-label">Time</span><span class="meta-value">3–5 hrs</span></div>
+          <div class="meta-item"><span class="meta-label">Warranty</span><span class="meta-value">12 months</span></div>
         </div>
-    </section>
+        <a href="contact.html" class="btn-primary">Book Clutch Replacement</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Service Detail: Clutch Replacement -->
-    <section class="service-detail" id="clutch">
-        <div class="container">
-            <div class="service-detail-grid">
-                <div class="service-detail-image">
-                    <img src="images/mechanic-1.jpg" alt="Clutch replacement">
-                </div>
-                <div class="service-detail-content">
-                    <h2>Clutch Replacement</h2>
-                    <p>Experiencing clutch issues? Our team offers expert Clutch Replacement Service for all vehicle types. With skilled mechanics, top-quality parts, fast service, and fair prices, we'll have you back on the road smoothly. Say goodbye to clutch problems and hello to hassle-free driving with our Clutch Replacement Service!</p>
-                    <h4>What's Included:</h4>
-                    <ul class="service-detail-list">
-                        <li>Full clutch kit replacement (OEM or quality aftermarket)</li>
-                        <li>Flywheel inspection and skim (if needed)</li>
-                        <li>Clutch cable or hydraulic system check</li>
-                        <li>Gearbox oil top-up</li>
-                        <li>Road test and adjustment</li>
-                    </ul>
-                    <div class="notice-box">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-                        <span>Most clutch replacements require 3–5 hours. We recommend booking a morning slot.</span>
-                    </div>
-                    <div class="service-detail-meta">
-                        <div class="meta-item">
-                            <span class="meta-label">Time</span>
-                            <span class="meta-value">3–5 hrs</span>
-                        </div>
-                        <div class="meta-item">
-                            <span class="meta-label">Warranty</span>
-                            <span class="meta-value">12 months</span>
-                        </div>
-                    </div>
-                    <a href="book.html" class="btn btn-primary">Book Clutch Replacement</a>
-                </div>
-            </div>
+<section class="service-detail alt" id="brakes">
+  <div class="container">
+    <div class="service-detail-grid reverse">
+      <div class="service-detail-image">
+        <img src="https://images.unsplash.com/photo-1551522435-a13afa10f103?w=800&q=80" alt="Brake disc and pad replacement">
+      </div>
+      <div class="service-detail-content">
+        <h2>Brakes Replacement</h2>
+        <p>Your brakes are the most important safety system on your car. We replace pads, discs, and fluid with quality parts, then road-test every vehicle before handover. Smooth stops are our specialty.</p>
+        <h4>What is Included:</h4>
+        <ul class="service-detail-list">
+          <li>Brake pad replacement (front and/or rear)</li>
+          <li>Brake disc inspection and replacement if below spec</li>
+          <li>Brake caliper inspection and cleaning</li>
+          <li>Brake fluid flush and replacement</li>
+          <li>Handbrake adjustment</li>
+          <li>Post-repair road test</li>
+        </ul>
+        <div class="service-detail-meta">
+          <div class="meta-item"><span class="meta-label">Pads Only</span><span class="meta-value">1–1.5 hrs</span></div>
+          <div class="meta-item"><span class="meta-label">Full Brake Job</span><span class="meta-value">2–3 hrs</span></div>
         </div>
-    </section>
+        <a href="contact.html" class="btn-primary">Book Brake Service</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Service Detail: Brakes -->
-    <section class="service-detail alt" id="brakes">
-        <div class="container">
-            <div class="service-detail-grid reverse">
-                <div class="service-detail-image">
-                    <img src="images/mechanic-5.jpg" alt="Brake replacement">
-                </div>
-                <div class="service-detail-content">
-                    <h2>Brakes Replacement</h2>
-                    <p>Our Brakes Replacement Service is all about ensuring your car's safety whenever you hit the road. With our experienced team and top-notch parts, you can count on us for brakes that work reliably. Smooth stops are our specialty. Get in touch with us today to schedule your service and drive with confidence!</p>
-                    <h4>What's Included:</h4>
-                    <ul class="service-detail-list">
-                        <li>Brake pad replacement (front and/or rear)</li>
-                        <li>Brake disc inspection and replacement if below spec</li>
-                        <li>Brake caliper inspection and cleaning</li>
-                        <li>Brake fluid flush and replacement</li>
-                        <li>Handbrake adjustment</li>
-                        <li>Post-repair road test</li>
-                    </ul>
-                    <div class="service-detail-meta">
-                        <div class="meta-item">
-                            <span class="meta-label">Pads Only</span>
-                            <span class="meta-value">1–1.5 hrs</span>
-                        </div>
-                        <div class="meta-item">
-                            <span class="meta-label">Full Brake Job</span>
-                            <span class="meta-value">2–3 hrs</span>
-                        </div>
-                    </div>
-                    <a href="book.html" class="btn btn-primary">Book Brake Service</a>
-                </div>
-            </div>
+<section class="service-detail" id="diagnostics">
+  <div class="container">
+    <div class="service-detail-grid">
+      <div class="service-detail-image">
+        <img src="https://images.unsplash.com/photo-1530046339160-8d45189c3a1b?w=800&q=80" alt="Car diagnostics and computer scan">
+      </div>
+      <div class="service-detail-content">
+        <h2>Point Checks & Diagnostics</h2>
+        <p>Not sure what is wrong? Our full diagnostic service checks every module, interprets fault codes, and gives you a clear explanation of what needs fixing and what it will cost.</p>
+        <h4>What is Included:</h4>
+        <ul class="service-detail-list">
+          <li>Full computer diagnostic scan (all modules)</li>
+          <li>Fault code interpretation and report</li>
+          <li>Live data analysis</li>
+          <li>Physical component testing where needed</li>
+          <li>Clear explanation of findings</li>
+          <li>Upfront quote for any required repairs</li>
+        </ul>
+        <div class="service-detail-meta">
+          <div class="meta-item"><span class="meta-label">Time</span><span class="meta-value">30–60 min</span></div>
+          <div class="meta-item"><span class="meta-label">Report</span><span class="meta-value">Included</span></div>
         </div>
-    </section>
+        <a href="contact.html" class="btn-primary">Book Diagnostics</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Service Detail: Diagnostics -->
-    <section class="service-detail" id="diagnostics">
-        <div class="container">
-            <div class="service-detail-grid">
-                <div class="service-detail-image">
-                    <img src="images/mechanic-4.jpg" alt="Car diagnostics">
-                </div>
-                <div class="service-detail-content">
-                    <h2>Point Checks & Diagnostics</h2>
-                    <p>Our Point Checks & Diagnostics Service makes sure your systems work well. We check everything carefully, find any problems, and give you advice on how to fix them. Our team uses the best tools to help your systems run smoothly. You can trust us to make sure your work keeps going smoothly.</p>
-                    <h4>What's Included:</h4>
-                    <ul class="service-detail-list">
-                        <li>Full computer diagnostic scan (all modules)</li>
-                        <li>Fault code interpretation and report</li>
-                        <li>Live data analysis</li>
-                        <li>Physical component testing where needed</li>
-                        <li>Clear explanation of findings</li>
-                        <li>Upfront quote for any required repairs</li>
-                    </ul>
-                    <div class="service-detail-meta">
-                        <div class="meta-item">
-                            <span class="meta-label">Time</span>
-                            <span class="meta-value">30–60 min</span>
-                        </div>
-                        <div class="meta-item">
-                            <span class="meta-label">Report</span>
-                            <span class="meta-value">Included</span>
-                        </div>
-                    </div>
-                    <a href="book.html" class="btn btn-primary">Book Diagnostics</a>
-                </div>
-            </div>
+<section class="service-detail alt" id="cooling">
+  <div class="container">
+    <div class="service-detail-grid reverse">
+      <div class="service-detail-image">
+        <img src="https://images.unsplash.com/photo-1606577924006-27d5b0939a56?w=800&q=80" alt="Car cooling system and aircon service">
+      </div>
+      <div class="service-detail-content">
+        <h2>Cooling Systems Replacement</h2>
+        <p>Overheating can destroy an engine in minutes. We pressure-test for leaks, replace radiators, thermostats, and water pumps, and flush your coolant system so you can drive with confidence.</p>
+        <h4>What is Included:</h4>
+        <ul class="service-detail-list">
+          <li>Coolant leak detection and pressure test</li>
+          <li>Radiator repair or replacement</li>
+          <li>Thermostat replacement</li>
+          <li>Water pump replacement</li>
+          <li>Heater matrix and hose inspection</li>
+          <li>Coolant flush and refill</li>
+        </ul>
+        <div class="service-detail-meta">
+          <div class="meta-item"><span class="meta-label">Time</span><span class="meta-value">1.5–3 hrs</span></div>
+          <div class="meta-item"><span class="meta-label">Warranty</span><span class="meta-value">12 months</span></div>
         </div>
-    </section>
+        <a href="contact.html" class="btn-primary">Book Cooling Repair</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Service Detail: Cooling System -->
-    <section class="service-detail alt" id="cooling">
-        <div class="container">
-            <div class="service-detail-grid reverse">
-                <div class="service-detail-image">
-                    <img src="images/mechanic-3.jpg" alt="Cooling system repair">
-                </div>
-                <div class="service-detail-content">
-                    <h2>Cooling Systems Replacement</h2>
-                    <p>We're experts in swapping out cooling systems to keep you comfortable. Our team knows how to do the job well, and we'll make sure your new system works great. Whether it's fixing a broken one or upgrading to a better model, we've got you covered. Just give us a shout, and we'll take care of the rest!</p>
-                    <h4>What's Included:</h4>
-                    <ul class="service-detail-list">
-                        <li>Coolant leak detection and pressure test</li>
-                        <li>Radiator repair or replacement</li>
-                        <li>Thermostat replacement</li>
-                        <li>Water pump replacement</li>
-                        <li>Heater matrix and hose inspection</li>
-                        <li>Coolant flush and refill</li>
-                    </ul>
-                    <div class="service-detail-meta">
-                        <div class="meta-item">
-                            <span class="meta-label">Time</span>
-                            <span class="meta-value">1.5–3 hrs</span>
-                        </div>
-                        <div class="meta-item">
-                            <span class="meta-label">Warranty</span>
-                            <span class="meta-value">12 months</span>
-                        </div>
-                    </div>
-                    <a href="book.html" class="btn btn-primary">Book Cooling Repair</a>
-                </div>
-            </div>
+<section class="service-detail" id="aircon">
+  <div class="container">
+    <div class="service-detail-grid">
+      <div class="service-detail-image">
+        <img src="https://images.unsplash.com/photo-1625043483328-1fb3336024af?w=800&q=80" alt="Car air conditioning recharge and repair">
+      </div>
+      <div class="service-detail-content">
+        <h2>Air Condition Service</h2>
+        <p>Gauteng heat is no joke. If your AC is blowing warm air, we will pressure-test the system, detect leaks, recharge refrigerant, and inspect the compressor and condenser so you stay cool.</p>
+        <h4>What is Included:</h4>
+        <ul class="service-detail-list">
+          <li>AC system pressure test and leak detection</li>
+          <li>Refrigerant recharge (R134a or R1234yf)</li>
+          <li>Compressor and condenser inspection</li>
+          <li>Cabin filter replacement</li>
+          <li>Drive belt inspection</li>
+          <li>Performance test and temperature check</li>
+        </ul>
+        <div class="service-detail-meta">
+          <div class="meta-item"><span class="meta-label">Time</span><span class="meta-value">1–2 hrs</span></div>
+          <div class="meta-item"><span class="meta-label">Warranty</span><span class="meta-value">6 months</span></div>
         </div>
-    </section>
+        <a href="contact.html" class="btn-primary">Book Aircon Service</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Service Detail: Air Condition Service -->
-    <section class="service-detail" id="aircon">
-        <div class="container">
-            <div class="service-detail-grid">
-                <div class="service-detail-image">
-                    <img src="images/mechanic-4.jpg" alt="Air conditioning service">
-                </div>
-                <div class="service-detail-content">
-                    <h2>Air Condition Service</h2>
-                    <p>We're here for all your Air Condition Service needs! Our team helps you keep cool and comfortable. We fix issues, do regular check-ups, and install new units. If there's an emergency, we're ready to help fast. Our experienced team ensures you're satisfied with our work. Need Air Condition Service? Give us a call today!</p>
-                    <h4>What's Included:</h4>
-                    <ul class="service-detail-list">
-                        <li>AC system pressure test and leak detection</li>
-                        <li>Refrigerant recharge (R134a or R1234yf)</li>
-                        <li>Compressor and condenser inspection</li>
-                        <li>Cabin filter replacement</li>
-                        <li>Drive belt inspection</li>
-                        <li>Performance test and temperature check</li>
-                    </ul>
-                    <div class="service-detail-meta">
-                        <div class="meta-item">
-                            <span class="meta-label">Time</span>
-                            <span class="meta-value">1–2 hrs</span>
-                        </div>
-                        <div class="meta-item">
-                            <span class="meta-label">Warranty</span>
-                            <span class="meta-value">6 months</span>
-                        </div>
-                    </div>
-                    <a href="book.html" class="btn btn-primary">Book Aircon Service</a>
-                </div>
-            </div>
+<section class="service-detail alt" id="timing-chain">
+  <div class="container">
+    <div class="service-detail-grid reverse">
+      <div class="service-detail-image">
+        <img src="https://images.unsplash.com/photo-1487754180451-c456f743a0f7?w=800&q=80" alt="Auto parts and timing chain kit">
+      </div>
+      <div class="service-detail-content">
+        <h2>Timing Chain Replacement</h2>
+        <p>A rattling noise or check-engine light could mean timing chain trouble. We replace the chain, tensioner, and guide rails, then verify engine timing before road testing. Do not wait — a failed timing chain can destroy your engine.</p>
+        <h4>What is Included:</h4>
+        <ul class="service-detail-list">
+          <li>Timing chain and tensioner replacement</li>
+          <li>Guide rail inspection and replacement</li>
+          <li>Cam and crank seal replacement</li>
+          <li>Engine timing verification</li>
+          <li>Oil change recommended with service</li>
+          <li>Road test before handover</li>
+        </ul>
+        <div class="notice-box"><i class="fas fa-info-circle"></i><span>Timing chain jobs are complex and may require a full day. We will assess your vehicle first.</span></div>
+        <div class="service-detail-meta">
+          <div class="meta-item"><span class="meta-label">Time</span><span class="meta-value">4–8 hrs</span></div>
+          <div class="meta-item"><span class="meta-label">Warranty</span><span class="meta-value">12 months</span></div>
         </div>
-    </section>
+        <a href="contact.html" class="btn-primary">Book Timing Chain Service</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Service Detail: Timing Chain -->
-    <section class="service-detail alt" id="timing-chain">
-        <div class="container">
-            <div class="service-detail-grid reverse">
-                <div class="service-detail-image">
-                    <img src="images/mechanic-1.jpg" alt="Timing chain replacement">
-                </div>
-                <div class="service-detail-content">
-                    <h2>Timing Chain Replacement</h2>
-                    <p>We're here to help if your car's timing chain needs fixing. Our team knows what they're doing and uses good parts to get your car working well again. Signs your timing chain might be broken include engine problems, strange noises, and lights on your dashboard. We'll check your car, fix the chain if needed, and make sure everything's okay before giving it back to you. Don't wait—book your timing chain replacement with us today to keep your car running smoothly.</p>
-                    <h4>What's Included:</h4>
-                    <ul class="service-detail-list">
-                        <li>Timing chain and tensioner replacement</li>
-                        <li>Guide rail inspection and replacement</li>
-                        <li>Cam and crank seal replacement</li>
-                        <li>Engine timing verification</li>
-                        <li>Oil change recommended with service</li>
-                        <li>Road test before handover</li>
-                    </ul>
-                    <div class="notice-box">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-                        <span>Timing chain jobs are complex and may require a full day. We will assess your vehicle first.</span>
-                    </div>
-                    <div class="service-detail-meta">
-                        <div class="meta-item">
-                            <span class="meta-label">Time</span>
-                            <span class="meta-value">4–8 hrs</span>
-                        </div>
-                        <div class="meta-item">
-                            <span class="meta-label">Warranty</span>
-                            <span class="meta-value">12 months</span>
-                        </div>
-                    </div>
-                    <a href="book.html" class="btn btn-primary">Book Timing Chain Service</a>
-                </div>
-            </div>
+<section class="service-detail" id="cambelt">
+  <div class="container">
+    <div class="service-detail-grid">
+      <div class="service-detail-image">
+        <img src="https://images.unsplash.com/photo-1608506479722-5656531b9326?w=800&q=80" alt="Cambelt replacement job on a sedan">
+      </div>
+      <div class="service-detail-content">
+        <h2>Cambelt Replacement</h2>
+        <p>A snapped cambelt can write off your engine. We replace the belt, tensioner, idler pulley, and water pump (if driven by belt), then set full engine timing and test drive before handover.</p>
+        <h4>What is Included:</h4>
+        <ul class="service-detail-list">
+          <li>Cambelt / timing belt replacement</li>
+          <li>Tensioner and idler pulley replacement</li>
+          <li>Water pump replacement (if driven by belt)</li>
+          <li>Cam and crank seal inspection</li>
+          <li>Full engine timing setup</li>
+          <li>Test drive and final checks</li>
+        </ul>
+        <div class="notice-box"><i class="fas fa-info-circle"></i><span>Most manufacturers recommend cambelt replacement every 60,000–100,000 km. Check your manual.</span></div>
+        <div class="service-detail-meta">
+          <div class="meta-item"><span class="meta-label">Time</span><span class="meta-value">3–6 hrs</span></div>
+          <div class="meta-item"><span class="meta-label">Warranty</span><span class="meta-value">12 months</span></div>
         </div>
-    </section>
+        <a href="contact.html" class="btn-primary">Book Cambelt Replacement</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Service Detail: Cambelt -->
-    <section class="service-detail" id="cambelt">
-        <div class="container">
-            <div class="service-detail-grid">
-                <div class="service-detail-image">
-                    <img src="images/mechanic-2.jpg" alt="Cambelt replacement">
-                </div>
-                <div class="service-detail-content">
-                    <h2>Cambelt Replacement</h2>
-                    <p>Making sure your car runs smoothly is important, and our Cambelt Replacement Service is here to help. We take a close look at your cambelt, using only high-quality parts and skilled technicians to replace it if needed. We work efficiently to get you back on the road without breaking the bank. You can trust us to do a great job and keep you satisfied. Give us a call today to schedule your cambelt replacement and keep your car running smoothly!</p>
-                    <h4>What's Included:</h4>
-                    <ul class="service-detail-list">
-                        <li>Cambelt / timing belt replacement</li>
-                        <li>Tensioner and idler pulley replacement</li>
-                        <li>Water pump replacement (if driven by belt)</li>
-                        <li>Cam and crank seal inspection</li>
-                        <li>Full engine timing setup</li>
-                        <li>Test drive and final checks</li>
-                    </ul>
-                    <div class="notice-box">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-                        <span>Most manufacturers recommend cambelt replacement every 60,000–100,000 km. Check your manual.</span>
-                    </div>
-                    <div class="service-detail-meta">
-                        <div class="meta-item">
-                            <span class="meta-label">Time</span>
-                            <span class="meta-value">3–6 hrs</span>
-                        </div>
-                        <div class="meta-item">
-                            <span class="meta-label">Warranty</span>
-                            <span class="meta-value">12 months</span>
-                        </div>
-                    </div>
-                    <a href="book.html" class="btn btn-primary">Book Cambelt Replacement</a>
-                </div>
-            </div>
+<section class="section section-light">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">How It Works</span>
+      <h2>Our Simple 4-Step Process</h2>
+      <p>Getting your car fixed should not be complicated. Here is how we make it easy.</p>
+    </div>
+    <div class="process-steps">
+      <div class="process-step">
+        <h3>Book Online</h3>
+        <p>Call, WhatsApp, or fill out our form. Tell us what is wrong and where you are in Midrand.</p>
+      </div>
+      <div class="process-step">
+        <h3>We Come to You</h3>
+        <p>Our mobile mechanic arrives at your home, office, or roadside with all the tools needed.</p>
+      </div>
+      <div class="process-step">
+        <h3>Fix & Test</h3>
+        <p>We diagnose, quote, repair, and test your vehicle on the spot using quality parts.</p>
+      </div>
+      <div class="process-step">
+        <h3>Drive Happy</h3>
+        <p>Pay only what we quoted. No hidden fees. Drive away with a 12-month warranty on most work.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">FAQ</span>
+      <h2>Common Questions</h2>
+    </div>
+    <div style="max-width:800px;margin:0 auto">
+      <div class="faq-item active">
+        <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">Do you really come to my house?<i class="fas fa-chevron-down"></i></div>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes. That is what makes us different. We are a mobile mechanic service. We bring tools, parts, and expertise to your home, office, or even the side of the road in Midrand and surrounding areas.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">What areas do you cover?<i class="fas fa-chevron-down"></i></div>
+        <div class="faq-answer"><div class="faq-answer-inner">We primarily serve Midrand including Noordwyk, Vorna Valley, Kyalami, Halfway House, Blue Hills, Waterfall, and The Reeds. If you are close by, just ask — we likely cover it.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">Do you offer a warranty?<i class="fas fa-chevron-down"></i></div>
+        <div class="faq-answer"><div class="faq-answer-inner">Absolutely. Most major repairs come with a 12-month warranty on parts and labour. Oil changes carry a 30-day warranty. We stand behind our work.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">How do I pay?<i class="fas fa-chevron-down"></i></div>
+        <div class="faq-answer"><div class="faq-answer-inner">We accept cash, EFT, and card payments on completion of the job. We always quote upfront so there are no surprises when it is time to pay.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">Can I bring my car to your workshop instead?<i class="fas fa-chevron-down"></i></div>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes. We have a fully equipped workshop at La Maison Royale, 82 Tamboti Rd, Witpoort, Midrand. You can drop your car off if you prefer.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-box">
+      <h2>Not Sure What is Wrong?</h2>
+      <p>Book a diagnostic and we will come to you, identify the issue, and give you an upfront quote — no obligation.</p>
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn-primary"><i class="fas fa-calendar-check"></i> Book Diagnostics</a>
+        <a href="https://wa.me/27789078438" class="btn-secondary" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>WERHU <span>WORKS</span></h3>
+        <p>Professional mobile mechanical and electrical engineering services in Midrand, Gauteng. We bring the workshop to your doorstep.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/WerhuWorksEngineeringServices" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/werhuworksengineeringservices/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@werhu_workx" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="https://wa.me/27789078438" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
         </div>
-    </section>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#oil-change">Oil Change</a></li>
+          <li><a href="services.html#servicing">Minor & Major Service</a></li>
+          <li><a href="services.html#clutch">Clutch Replacement</a></li>
+          <li><a href="services.html#brakes">Brake Replacement</a></li>
+          <li><a href="services.html#diagnostics">Diagnostics</a></li>
+          <li><a href="services.html#cooling">Cooling & Aircon</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <ul>
+          <li><i class="fas fa-location-dot"></i> La Maison Royale, 82 Tamboti Rd, Witpoort 406-Jr, Midrand, 1685</li>
+          <li><a href="tel:0789078438"><i class="fas fa-phone"></i> 078 907 8438</a></li>
+          <li><a href="mailto:info@werhuworks.co.za"><i class="fas fa-envelope"></i> info@werhuworks.co.za</a></li>
+          <li><a href="https://wa.me/27789078438" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp Message</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Werhu Works. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-box">
-                <h2>Not Sure What's Wrong?</h2>
-                <p>Book a diagnostic and we'll come to you, identify the issue, and give you an upfront quote — no obligation.</p>
-                <div class="cta-buttons">
-                    <a href="book.html" class="btn btn-primary">Book Diagnostics</a>
-                    <a href="https://wa.me/27789078438" class="btn btn-secondary" target="_blank">WhatsApp Us</a>
-                </div>
-            </div>
-        </div>
-    </section>
+<a href="https://wa.me/27789078438" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
 
-    <!-- Footer -->
-    <footer class="footer" id="contact">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <img src="images/logo.png" alt="Werhu Works" class="footer-logo">
-                    <p>Professional mobile mechanical and electrical engineering services in Midrand, Gauteng.</p>
-                    <div class="footer-social">
-                        <a href="https://www.facebook.com/WerhuWorksEngineeringServices" target="_blank" aria-label="Facebook">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-                        </a>
-                        <a href="https://www.instagram.com/werhuworksengineeringservices/" target="_blank" aria-label="Instagram">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="currentColor" stroke-width="2"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2"/></svg>
-                        </a>
-                        <a href="https://www.tiktok.com/@werhu_workx" target="_blank" aria-label="TikTok">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.88-2.89 2.89 2.89 0 0 1 2.88-2.89c.23 0 .45.03.66.08V9.4a6.37 6.37 0 0 0-.66-.04A6.34 6.34 0 0 0 3.25 15.7a6.34 6.34 0 0 0 6.33 6.34 6.34 6.34 0 0 0 6.33-6.34V8.83a8.23 8.23 0 0 0 4.8 1.54V6.89a4.85 4.85 0 0 1-1.12-.2z"/></svg>
-                        </a>
-                        <a href="https://wa.me/27789078438" target="_blank" aria-label="WhatsApp">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Our Services</a></li>
-                        <li><a href="work.html">Our Work</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="book.html">Book a Service</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="services.html#oil-change">Oil Change</a></li>
-                        <li><a href="services.html#servicing">Minor & Major Service</a></li>
-                        <li><a href="services.html#clutch">Clutch Replacement</a></li>
-                        <li><a href="services.html#brakes">Brake Replacement</a></li>
-                        <li><a href="services.html#diagnostics">Diagnostics</a></li>
-                        <li><a href="services.html#cooling">Cooling System</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                            La Maison Royale, 82 Tamboti Rd, Witpoort 406-Jr, Midrand, 1685
-                        </li>
-                        <li>
-                            <a href="tel:0789078438">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                                078 907 8438
-                            </a>
-                        </li>
-                        <li>
-                            <a href="mailto:info@werhuworks.co.za">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                                info@werhuworks.co.za
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; <span id="year"></span> Werhu Works. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- WhatsApp Float -->
-    <a href="https://wa.me/27789078438" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    </a>
-
-    <script src="script.js"></script>
+<script>
+const menuToggle=document.getElementById('menuToggle');
+const navMenu=document.getElementById('navMenu');
+menuToggle.addEventListener('click',function(){navMenu.classList.toggle('active');});
+</script>
 </body>
 </html>
